@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  body {
+    @apply bg-[#f8f9fa] text-gray-800 dark:bg-[#050505] dark:text-gray-200 transition-colors duration-300;
+  }
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-gray-100 dark:bg-[#0a0a0a];
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-gray-300 dark:bg-[#222] rounded-full;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-gray-400 dark:bg-[#333];
+  }
+  ::selection {
+    @apply bg-[#065f46] text-white;
+  }
+}
