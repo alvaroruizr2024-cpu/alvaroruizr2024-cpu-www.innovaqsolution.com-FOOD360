@@ -1,0 +1,39 @@
+{
+  "_fuente": "Paleta canónica = objeto B en global/index.html:26-36 (colores del logo INNOVAQ). Si cambias un color aquí, se corrige en las 4 piezas de redes; replica el mismo hex en el deck y el documento.",
+  "brand": "INNOVAQ SOLUTIONS",
+  "tokens": {
+    "color-bg": "#0d4a6e",
+    "color-fg": "#FFFFFF",
+    "color-primary": "#126695",
+    "color-primary-light": "#2B9BCB",
+    "color-accent": "#F1912B",
+    "color-accent-light": "#f5aa5a",
+    "color-success": "#7AB648",
+    "color-neutral": "#777873",
+    "color-surface": "#FBFBF9",
+    "color-text": "#1a1a2e",
+    "font-heading": "Inter, 'Segoe UI', Arial, sans-serif",
+    "font-body": "Inter, 'Segoe UI', Arial, sans-serif"
+  },
+  "text": {
+    "brand": "INNOVAQ",
+    "kicker": "Lanzamiento",
+    "headline": "Titular corto con <em>una idea</em>.",
+    "sub": "Una frase de apoyo que explica el beneficio concreto.",
+    "cta": "Agenda una demo",
+    "handle": "innovaqsolution.com · @innovaqsolutions"
+  },
+  "assets": {
+    "logo": "1000608638.jpg"
+  },
+  "identidad": {
+    "razon_social": "INNOVAQ SOLUTIONS SAC",
+    "tagline_es": "Calidad Innovadora. Soluciones Prácticas.",
+    "tagline_en": "Innovative Quality. Practical Solutions.",
+    "claim_es": "Elevando Estándares en Seguridad, Calidad y Cumplimiento Normativo",
+    "whatsapp": "+51 900 801 059",
+    "web": "https://www.innovaqsolution.com",
+    "tiktok": "@innovaqsolutions",
+    "productos_fuente": "global/index.html:158 (array PRODUCTS, copy ES/EN por producto)"
+  }
+}

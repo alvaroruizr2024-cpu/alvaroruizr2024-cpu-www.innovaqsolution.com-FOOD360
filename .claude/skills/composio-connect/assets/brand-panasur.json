@@ -1,0 +1,30 @@
+{
+  "_fuente": "Paleta PANASUR = :root en panasur/fotocheck/styles.css:4-19. Marca de cliente: úsala solo cuando el kit sea para PANASUR E.I.R.L. (SIG360-Panasur, Control de Combustible, fotocheck).",
+  "brand": "PANASUR E.I.R.L.",
+  "tokens": {
+    "color-bg": "#1F3864",
+    "color-fg": "#FFFFFF",
+    "color-primary": "#2E75B6",
+    "color-primary-light": "#D9E2F3",
+    "color-accent": "#FFC000",
+    "color-accent-light": "#FFF2CC",
+    "color-success": "#548235",
+    "color-danger": "#C00000",
+    "color-neutral": "#595959",
+    "color-surface": "#F2F2F2",
+    "color-text": "#000000",
+    "font-heading": "'Segoe UI', Arial, sans-serif",
+    "font-body": "'Segoe UI', Arial, sans-serif"
+  },
+  "text": {
+    "brand": "PANASUR",
+    "kicker": "Comunicado",
+    "headline": "Titular corto con <em>una idea</em>.",
+    "sub": "Una frase de apoyo que explica el beneficio concreto.",
+    "cta": "Más información",
+    "handle": "PANASUR E.I.R.L."
+  },
+  "assets": {
+    "logo": "panasur/fotocheck/icon-512.png"
+  }
+}
