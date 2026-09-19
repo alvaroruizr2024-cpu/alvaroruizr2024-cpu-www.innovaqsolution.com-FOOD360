@@ -180,6 +180,7 @@ conectes. Reglas de la casa:
 
 - `references/setup-guide.md` — instalación paso a paso por entorno, textos exactos de pantalla, autorización.
 - `references/prompt-library.md` — plantillas de prompt de una sola pasada, visuales y no visuales, con marca INNOVAQ/PANASUR.
+- `references/productos-innovaq.md` — playbook de mejora por producto: copy oficial, gancho, puntos exactos y prompt listo para los 11 productos, con tabla de estado.
 - `references/video-source.md` — origen: guion del video por subtítulos, pantallas y tiempos, qué se verificó y qué no.
 - `scripts/mcp_add.sh` — registro del servidor MCP de Composio en Claude Code.
 - `assets/brand-innovaq.json`, `assets/brand-panasur.json` — paletas y textos de marca para la línea de marca del prompt.
