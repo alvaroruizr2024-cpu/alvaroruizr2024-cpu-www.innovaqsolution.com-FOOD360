@@ -45,7 +45,7 @@ Conserva cada texto exactamente como está escrito.
 
 | Producto    | Gancho                                              | Plan MYPE | Estado                                  |
 |-------------|-----------------------------------------------------|-----------|-----------------------------------------|
-| SIG360      | ¿Auditoría ISO la próxima semana?                   | S/29      | Borrador en Canva `DAHVmzwnDrs`, textos corregidos sin guardar |
+| SIG360      | ¿Auditoría ISO la próxima semana?                   | S/29      | Hecho: diseño `DAHVmzwnDrs`, propuesta 2 (pág. 2) con copy exacto, PNG/PDF exportados |
 | ERP360      | ¿Sigues cerrando el mes en Excel?                   | S/39      | Pendiente                               |
 | TPM360      | ¿Tu planta sigue perdiendo turnos?                  | S/19      | Pendiente                               |
 | MTP360      | ¿Capacitas mucho y certificas poco?                 | S/19      | Pendiente                               |
@@ -64,12 +64,13 @@ Conserva cada texto exactamente como está escrito.
 **Copy oficial.** ISO 9001, 14001, 45001, 37001 unificados bajo Annex SL. Única
 plataforma en Perú que integra 4 normas. Plan MYPE S/29/mes (3 usuarios, 1 sede).
 
-**Estado.** Generado en Canva (post IG 1080×1350, 4 candidatos). Candidato 1 convertido
-en diseño `DAHVmzwnDrs` (edición: https://www.canva.com/d/eI1WzuO6pZK7ivo). Los textos
-parafraseados se corrigieron en una transacción de edición que no se guardó porque el
-usuario denegó el commit; el diseño sigue con el texto original de la IA. Para
-terminarlo: abrir el enlace, corregir el subtítulo y las viñetas según el prompt, y
-exportar PNG.
+**Estado.** Diseño `DAHVmzwnDrs` (edición: https://www.canva.com/d/eI1WzuO6pZK7ivo) con
+dos páginas. Página 1: candidato generado por la IA de Canva, sin tocar (conserva la
+paráfrasis "Única plataforma que integra Annex SL"). Página 2 ("Propuesta 2 · SIG360"):
+construida elemento a elemento con el copy exacto de este playbook, cuatro puntos
+numerados, CTA y pie de marca; guardada y exportada a PNG y PDF el 19-09-2026. Lección
+para el resto de productos: cuando la IA parafrasea, es más rápido construir la página
+con `add_text`/`insert_shape` que corregir el candidato.
 
 ```
 Crea un carrusel de Instagram con el gancho "¿Auditoría ISO la próxima semana? (no es lo
