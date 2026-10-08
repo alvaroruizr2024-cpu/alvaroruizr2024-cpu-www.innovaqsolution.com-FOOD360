@@ -16,6 +16,13 @@ import {
 import { TrendingUp, AlertTriangle, CheckCircle, Percent, Zap, RefreshCw } from 'lucide-react';
 import { useLanguage } from '../../contexts/LanguageContext';
 import { useTheme } from '../../contexts/ThemeContext';
+import { motion } from 'motion/react';
+import { Scene3D } from '../3d/Scene3D';
+import { Tilt } from '../cinematic/Tilt';
+import { CountUp } from '../cinematic/CountUp';
+
+const container = { hidden: {}, show: { transition: { staggerChildren: 0.08, delayChildren: 0.15 } } };
+const item = { hidden: { opacity: 0, y: 30, scale: 0.96 }, show: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.7, ease: [0.22, 1, 0.36, 1] as const } } };
 
 ChartJS.register(
   CategoryScale,
@@ -116,9 +123,23 @@ export function Dashboard() {
         </button>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
+      <motion.section
+        initial={{ opacity: 0, scale: 0.97 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
+        className="relative h-[340px] overflow-hidden rounded-2xl border border-gray-200 dark:border-[#222] bg-gradient-to-br from-[#065f46]/10 via-transparent to-[#d4a017]/10 dark:from-[#065f46]/25 dark:to-[#d4a017]/10"
+        aria-label="Visualización 3D interactiva"
+      >
+        <div className="absolute inset-0"><Scene3D /></div>
+        <div className="pointer-events-none absolute left-8 top-1/2 -translate-y-1/2 max-w-xs">
+          <p className="text-[11px] uppercase tracking-[0.35em] text-[#d4a017]">Obrador en vivo</p>
+          <p className="mt-2 text-2xl font-bold text-gray-900 dark:text-white leading-tight">Tu producción, en tres dimensiones</p>
+          <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">Mueve el cursor para girar · clic para separar los pisos</p>
+        </div>
+      </motion.section>
+
+      <motion.div variants={container} initial="hidden" animate="show" className="grid grid-cols-1 md:grid-cols-5 gap-4">
         {kpis.map((kpi, i) => (
-          <div key={i} className="bg-white dark:bg-[#111] border border-gray-200 dark:border-[#222] p-5 rounded-xl hover:border-[#065f46]/50 transition-colors group">
+          <motion.div key={i} variants={item}>
+          <Tilt className="h-full bg-white dark:bg-[#111] border border-gray-200 dark:border-[#222] p-5 rounded-xl hover:border-[#065f46]/50 transition-colors group">
             <div className="flex justify-between items-start">
               <div className={`p-2 rounded-lg ${kpi.bg}`}>
                 <kpi.icon className={`w-5 h-5 ${kpi.color}`} />
@@ -126,36 +147,37 @@ export function Dashboard() {
               <span className="text-xs font-medium text-gray-600 dark:text-gray-500 bg-gray-100 dark:bg-[#1a1a1a] px-2 py-1 rounded-full">{kpi.target}</span>
             </div>
             <div className="mt-4">
-              <h3 className="text-3xl font-bold text-gray-900 dark:text-white group-hover:text-[#065f46] dark:group-hover:text-[#d4a017] transition-colors">{kpi.value}</h3>
+              <h3 className="text-3xl font-bold text-gray-900 dark:text-white group-hover:text-[#065f46] dark:group-hover:text-[#d4a017] transition-colors"><CountUp value={kpi.value} /></h3>
               <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">{kpi.title}</p>
             </div>
-          </div>
+          </Tilt>
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-        <div className="bg-white dark:bg-[#111] border border-gray-200 dark:border-[#222] p-6 rounded-xl h-[350px]">
+        <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-60px" }} transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }} className="bg-white dark:bg-[#111] border border-gray-200 dark:border-[#222] p-6 rounded-xl h-[350px]">
           <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">{t('dashboard.marginEvol')}</h3>
           <div className="h-[260px]">
             <Line data={marginData} options={chartOptions} />
           </div>
-        </div>
+        </motion.div>
         
-        <div className="bg-white dark:bg-[#111] border border-gray-200 dark:border-[#222] p-6 rounded-xl h-[350px]">
+        <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-60px" }} transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }} className="bg-white dark:bg-[#111] border border-gray-200 dark:border-[#222] p-6 rounded-xl h-[350px]">
           <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">{t('dashboard.salesSeason')}</h3>
           <div className="h-[260px]">
             <Bar data={salesData} options={chartOptions} />
           </div>
-        </div>
+        </motion.div>
 
-        <div className="bg-white dark:bg-[#111] border border-gray-200 dark:border-[#222] p-6 rounded-xl h-[350px]">
+        <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-60px" }} transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }} className="bg-white dark:bg-[#111] border border-gray-200 dark:border-[#222] p-6 rounded-xl h-[350px]">
           <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">{t('dashboard.wasteDist')}</h3>
           <div className="h-[260px]">
             <Doughnut data={wasteData} options={doughnutOptions} />
           </div>
-        </div>
+        </motion.div>
 
-        <div className="bg-white dark:bg-[#111] border border-gray-200 dark:border-[#222] p-6 rounded-xl h-[350px] flex flex-col">
+        <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-60px" }} transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }} className="bg-white dark:bg-[#111] border border-gray-200 dark:border-[#222] p-6 rounded-xl h-[350px] flex flex-col">
           <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">{t('dashboard.topProducts')}</h3>
           <div className="flex-1 overflow-y-auto pr-2 space-y-3">
             {[
@@ -179,7 +201,7 @@ export function Dashboard() {
               </div>
             ))}
           </div>
-        </div>
+        </motion.div>
       </div>
 
       <div className="bg-white dark:bg-[#111] border border-gray-200 dark:border-[#222] p-6 rounded-xl">
