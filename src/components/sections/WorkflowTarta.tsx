@@ -2,10 +2,17 @@ import React from 'react';
 import { CakeSlice, MousePointerClick, CalendarCheck, FileText, CreditCard, ChefHat, Star, ArrowRight } from 'lucide-react';
 import { useLanguage } from '../../contexts/LanguageContext';
 import { useTheme } from '../../contexts/ThemeContext';
+import { motion, useScroll, useSpring } from 'motion/react';
+import { useRef } from 'react';
+import { Tilt } from '../cinematic/Tilt';
 
 export function WorkflowTarta() {
   const { t } = useLanguage();
   const { theme } = useTheme();
+
+  const trackRef = useRef<HTMLDivElement>(null);
+  const { scrollYProgress } = useScroll({ target: trackRef, offset: ['start 0.8', 'end 0.6'] });
+  const progress = useSpring(scrollYProgress, { stiffness: 90, damping: 22 });
 
   const steps = [
     { id: 1, title: 'Captación', desc: 'Landing Page & Formulario GHL', icon: MousePointerClick, color: 'text-blue-500', bg: 'bg-blue-50 dark:bg-blue-500/10', border: 'border-blue-200 dark:border-blue-500/30' },
@@ -32,17 +39,27 @@ export function WorkflowTarta() {
       <div className="bg-white dark:bg-[#111] border border-gray-200 dark:border-[#222] p-8 rounded-xl relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_right,_var(--tw-gradient-stops))] from-[#d4a017]/5 via-transparent to-transparent pointer-events-none"></div>
         
-        <div className="relative z-10 flex flex-col gap-8">
+        <div ref={trackRef} className="relative z-10 flex flex-col gap-8">
+          {/* scroll-driven progress line */}
+          <div aria-hidden className="absolute left-8 top-8 bottom-8 w-0.5 bg-gray-200 dark:bg-[#222]">
+            <motion.div className="origin-top w-full h-full bg-gradient-to-b from-[#065f46] to-[#d4a017] shadow-[0_0_12px_#d4a017]" style={{ scaleY: progress }} />
+          </div>
           {steps.map((step, index) => (
-            <div key={step.id} className="flex items-center gap-6 group">
-              <div className={`w-16 h-16 rounded-2xl flex items-center justify-center border-2 transition-all duration-300 ${step.bg} ${step.border} group-hover:scale-110 group-hover:shadow-[0_0_20px_rgba(var(--tw-colors-${step.color.split('-')[1]}-500),0.3)] z-10 relative bg-white dark:bg-[#111]`}>
+            <motion.div
+              key={step.id}
+              initial={{ opacity: 0, x: 60, rotateY: -18 }}
+              whileInView={{ opacity: 1, x: 0, rotateY: 0 }}
+              viewport={{ once: true, margin: '-80px' }}
+              transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+              style={{ transformPerspective: 1200 }}
+              className="flex items-center gap-6 group"
+            >
+              <motion.div whileHover={{ scale: 1.15, rotate: -6 }} whileTap={{ scale: 0.95 }} className={`w-16 h-16 rounded-2xl flex items-center justify-center border-2 transition-shadow duration-300 ${step.bg} ${step.border} group-hover:shadow-[0_0_28px_rgba(212,160,23,0.35)] z-10 relative isolate`}>
+                <span aria-hidden className="absolute inset-0 -z-10 rounded-2xl bg-white dark:bg-[#111]" />
                 <step.icon className={`w-7 h-7 ${step.color}`} />
-                {index !== steps.length - 1 && (
-                  <div className="absolute top-16 bottom-[-32px] w-0.5 bg-gradient-to-b from-current to-transparent opacity-30 -z-10"></div>
-                )}
-              </div>
+              </motion.div>
               
-              <div className="flex-1 bg-gray-50 dark:bg-[#1a1a1a] border border-gray-200 dark:border-[#333] p-5 rounded-xl group-hover:border-gray-300 dark:group-hover:border-[#555] transition-colors relative">
+              <Tilt max={4} className="flex-1 bg-gray-50 dark:bg-[#1a1a1a] border border-gray-200 dark:border-[#333] p-5 rounded-xl group-hover:border-gray-300 dark:group-hover:border-[#555] transition-colors">
                 <div className="absolute left-[-8px] top-1/2 -translate-y-1/2 w-4 h-4 bg-gray-50 dark:bg-[#1a1a1a] border-l border-b border-gray-200 dark:border-[#333] rotate-45 group-hover:border-gray-300 dark:group-hover:border-[#555] transition-colors"></div>
                 
                 <div className="flex justify-between items-start">
@@ -79,8 +96,8 @@ export function WorkflowTarta() {
                   {step.id === 5 && <span>Trazabilidad: Asignación de lotes FEFO y operario</span>}
                   {step.id === 6 && <span>Fidelización: Segmentación RFM actualizada</span>}
                 </div>
-              </div>
-            </div>
+              </Tilt>
+            </motion.div>
           ))}
         </div>
       </div>

@@ -1,4 +1,8 @@
 import React, { useState } from 'react';
+import { AnimatePresence, motion } from 'motion/react';
+import { Intro } from '../cinematic/Intro';
+import { AmbientBackground } from '../cinematic/AmbientBackground';
+import { ease } from '../../lib/motion';
 import { Sidebar } from './Sidebar';
 import { Header } from './Header';
 import { Dashboard } from '../sections/Dashboard';
@@ -29,13 +33,25 @@ export function MainLayout() {
 
   return (
     <div className="flex h-screen bg-[#f8f9fa] dark:bg-[#050505] text-gray-800 dark:text-gray-200 overflow-hidden font-sans selection:bg-[#065f46] selection:text-white transition-colors duration-300">
+      <Intro />
       <Sidebar currentSection={currentSection} onSectionChange={setCurrentSection} />
       <main className="flex-1 flex flex-col overflow-hidden relative">
         <Header />
         <div className="flex-1 overflow-y-auto relative">
           <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-[#065f46]/5 dark:from-[#065f46]/10 via-transparent dark:via-[#050505] to-transparent dark:to-[#050505] pointer-events-none"></div>
-          <div className="relative z-10 p-8 min-h-full">
-            {renderSection()}
+          <AmbientBackground />
+          <div className="relative z-10 p-8 min-h-full" style={{ perspective: 1400 }}>
+            <AnimatePresence mode="wait">
+              <motion.div
+                key={currentSection}
+                initial={{ opacity: 0, y: 24, rotateX: 6, filter: 'blur(8px)' }}
+                animate={{ opacity: 1, y: 0, rotateX: 0, filter: 'blur(0px)' }}
+                exit={{ opacity: 0, y: -16, filter: 'blur(6px)' }}
+                transition={{ duration: 0.45, ease }}
+              >
+                {renderSection()}
+              </motion.div>
+            </AnimatePresence>
           </div>
         </div>
       </main>

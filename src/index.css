@@ -3,6 +3,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @layer base {
+  html { scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; } }
   body {
     @apply bg-[#f8f9fa] text-gray-800 dark:bg-[#050505] dark:text-gray-200 transition-colors duration-300;
   }
