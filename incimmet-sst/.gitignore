@@ -1,0 +1,10 @@
+node_modules/
+dist/
+coverage/
+*.log
+.DS_Store
+# Datos reales, fuentes Excel, conciliación con cifras y capturas con datos reales: NUNCA al repositorio (es público)
+private/
+*.xlsx
+!public/templates/*.xlsx
+.env*

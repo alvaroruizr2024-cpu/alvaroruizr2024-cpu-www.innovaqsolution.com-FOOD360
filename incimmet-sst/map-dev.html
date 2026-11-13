@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="es" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <title>Mapa regional — banco de pruebas (DEMO)</title>
+    <style>
+      html, body { margin: 0; background: var(--bg); color: var(--text); font-family: var(--font-sans); }
+      .dev { display: grid; gap: 10px; padding: 12px; justify-items: start; }
+      .dev-bar { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; font: 12px var(--font-mono); color: var(--text-2); }
+      .dev-bar button { padding: 3px 8px; border: 1px solid var(--border); border-radius: 6px; background: var(--surface-2); color: var(--text); font: inherit; cursor: pointer; }
+      .dev-panel { box-sizing: border-box; padding: 10px; border: 1px solid var(--border); border-radius: var(--radius-l); background: var(--surface); box-shadow: var(--glow); }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/map/dev.tsx"></script>
+  </body>
+</html>

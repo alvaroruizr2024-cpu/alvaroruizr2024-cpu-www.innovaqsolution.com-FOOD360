@@ -1,0 +1,2 @@
+﻿control_id,proyecto_id,riesgo,barrera,estandar,responsable_rol,frecuencia_dias,critico
+DEMO-CC-001,DEMO-01,caida_de_rocas,Desatado y sostenimiento,DEMO-EST-01,Jefe de guardia,7,si

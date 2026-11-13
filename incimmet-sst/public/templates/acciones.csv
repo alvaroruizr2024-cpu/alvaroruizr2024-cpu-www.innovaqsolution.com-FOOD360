@@ -1,0 +1,2 @@
+﻿accion_id,proyecto_id,origen,hallazgo,prioridad,responsable_rol,fecha_apertura,vencimiento_original,vencimiento_vigente,fecha_cierre,fecha_aceptacion,requiere_eficacia,eficacia_ok
+DEMO-AC-001,DEMO-01,inspeccion,DEMO-H-001,alta,Supervisor SST,2026-08-01,2026-08-31,2026-09-15,,,si,
