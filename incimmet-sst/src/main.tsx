@@ -13,6 +13,7 @@ import './styles/app.css';
 import App from './App';
 import { boot } from './state/store';
 import { Boundary } from './ui/panels';
+import { AuthGate } from './auth/AuthGate';
 
 // Registra todos los diccionarios presentes en src/i18n (ui, kpi, eng, rec, map…): cada frente aporta su espacio de nombres.
 import.meta.glob('./i18n/*.ts', { eager: true });
@@ -21,7 +22,9 @@ void boot();
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <Boundary fallback={<p style={{ padding: 24 }}>INCIMMET | SST — error</p>}>
-      <App />
+      <AuthGate>
+        <App />
+      </AuthGate>
     </Boundary>
   </StrictMode>,
 );

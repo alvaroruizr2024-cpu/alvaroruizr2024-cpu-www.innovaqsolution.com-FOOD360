@@ -1,5 +1,6 @@
 import { useEffect, useId, useMemo, useRef, useState } from 'react';
-import { BookOpen, FlaskConical, Funnel, LayoutGrid, Menu, Monitor, Moon, Presentation, RotateCcw, Scale, Search, SlidersHorizontal, Sun, Undo2, Upload } from 'lucide-react';
+import { BookOpen, FlaskConical, Funnel, LayoutGrid, Menu, Monitor, Moon, Presentation, RotateCcw, Scale, Search, SlidersHorizontal, Sun, Undo2, Upload, LogOut } from 'lucide-react';
+import { logout, useAuth } from '../auth/auth';
 import { LANGS, type CountryCode } from '../domain/types';
 import type { CompareMode, FilterOptions, Filters } from '../domain/model';
 import type { TFn } from '../i18n/core';
@@ -65,6 +66,7 @@ export function Header({ ctx, onExport, busy }: { ctx: SheetCtx; onExport(kind: 
   const months = useMemo(() => [...options.months].reverse(), [options.months]);
   const nRec = REC_DIMS.reduce((s, [, k]) => s + f[k].length, 0);
   const noData = !model, xlsxOff = !getIngestApi();
+  const auth = useAuth();
   return (
     <header className="hdr">
       <div className="hdr-1">
@@ -98,6 +100,8 @@ export function Header({ ctx, onExport, busy }: { ctx: SheetCtx; onExport(kind: 
                   </div>
                   {xlsxOff ? <p className="hint">{t('ui.export.xlsxNeedsIngest')}</p> : null}
                   {item(<Presentation size={14} aria-hidden="true" />, t('ui.menu.present'), () => actions.setTour(0), noData)}
+                  {auth.session ? <><div className="menu-sep trunc" title={auth.session.email}>{t('auth.signedAs', { email: auth.session.email })}</div>
+                  {item(<LogOut size={14} aria-hidden="true" />, t('auth.logout'), logout)}</> : null}
                 </div>
               );
             }}

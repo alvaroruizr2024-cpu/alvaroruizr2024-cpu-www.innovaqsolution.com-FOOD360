@@ -18,6 +18,19 @@ Otros comandos: `npm test`, `npm run typecheck`, `npm run build`, `npm run inges
 
 Parámetros de URL: `?data=real|demo|none`, `?lang=es|en|pt`, `?theme=dark|light`.
 
+## Acceso
+
+La lámina abre con una pantalla de ingreso por correo y contraseña. Las credenciales nunca entran al repositorio:
+
+```bash
+INCIMMET_USERS="correo1@dominio,correo2@dominio" INCIMMET_PASSWORD="…" node scripts/auth-config.mjs
+```
+
+El comando escribe `private/auth.config.json` (ignorado por git) con huellas SHA-256 de los correos y derivaciones PBKDF2-SHA256 de la contraseña, que `vite build` incorpora al paquete. Sin ese archivo la compilación muestra «acceso no configurado».
+Tras cinco intentos fallidos el ingreso se bloquea temporalmente. La sesión dura 12 horas, o 7 días si se marca «Mantener la sesión».
+
+Esta puerta funciona en el navegador. La protección real la da el alojamiento: publique la lámina en un sitio privado o detrás de autenticación del servidor.
+
 ## Datos
 
 Este repositorio es público: **no contiene Excel ni cifras reales**. Hay dos formas de cargar las bases.

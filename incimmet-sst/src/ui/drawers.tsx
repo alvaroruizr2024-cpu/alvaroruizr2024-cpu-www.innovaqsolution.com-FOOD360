@@ -273,7 +273,7 @@ let tplCache: Record<string, string[]> | null = null;
 async function loadTemplates(): Promise<Record<string, string[]>> {
   if (tplCache) return tplCache;
   const out: Record<string, string[]> = {};
-  await Promise.all(TEMPLATES.map(async (n) => { try { const r = await fetch(`/templates/${n}.csv`); out[n] = r.ok ? parseCsv(await r.text())[0] ?? [] : []; } catch { out[n] = []; } }));
+  await Promise.all(TEMPLATES.map(async (n) => { try { const r = await fetch(`${import.meta.env.BASE_URL}templates/${n}.csv`); out[n] = r.ok ? parseCsv(await r.text())[0] ?? [] : []; } catch { out[n] = []; } }));
   tplCache = out;
   return out;
 }

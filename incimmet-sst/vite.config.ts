@@ -20,7 +20,15 @@ function privateData(): Plugin {
   };
 }
 
+/** Credenciales: solo huellas (SHA-256 / PBKDF2) desde private/auth.config.json, que git ignora. Sin archivo → acceso no configurado. */
+function authConfig(): string {
+  const p = path.resolve(process.cwd(), 'private/auth.config.json');
+  return fs.existsSync(p) ? fs.readFileSync(p, 'utf8') : 'null';
+}
+
 export default defineConfig({
+  base: './',
+  define: { __INCIMMET_AUTH__: authConfig() },
   plugins: [react(), privateData()],
   build: { target: 'es2022', chunkSizeWarningLimit: 2500 },
   test: { environment: 'node', include: ['tests/**/*.test.ts'], passWithNoTests: true },
