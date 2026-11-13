@@ -1,4 +1,4 @@
-import { Component, Suspense, lazy, useCallback, useEffect, useId, useMemo, useRef, useState, type CSSProperties, type ReactNode } from 'react';
+import { Component, Suspense, lazy, useCallback, useDeferredValue, useEffect, useId, useMemo, useRef, useState, type CSSProperties, type ReactNode } from 'react';
 import type { CountryCode } from '../domain/types';
 import type { MapLayer, RegionMapProps } from '../domain/model';
 import '../i18n/map';
@@ -36,7 +36,9 @@ function tipStyle(tip: Tip): CSSProperties {
 
 /** Mapa regional (Perú, Colombia, Brasil): globo 3D, mapa 2D y lista accesible equivalentes, con barra, leyenda y búsqueda. */
 export default function RegionMap(props: RegionMapProps) {
-  const { model, lang, theme, mode, reducedMotion, t, fmt, onModeChange, onSelectCountry, onSelectProject, onOpenProject, onLayerChange } = props;
+  const { lang, theme, mode, reducedMotion, t, fmt, onModeChange, onSelectCountry, onSelectProject, onOpenProject, onLayerChange } = props;
+  // El mapa se actualiza con prioridad baja: las cifras de la lámina se pintan primero y el globo las sigue (respuesta de filtros).
+  const model = useDeferredValue(props.model);
   const { geo, error } = useGeo();
   const [query, setQuery] = useState('');
   const [tip, setTip] = useState<Tip | null>(null);

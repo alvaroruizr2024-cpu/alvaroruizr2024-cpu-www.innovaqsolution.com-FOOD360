@@ -21,7 +21,7 @@ const path = require('path');
   };
   const menu = async (i) => { await page.click('.menu > button'); await page.locator('.menu-i').nth(i).click(); };
   const shot = (n) => page.screenshot({ path: path.join(out, n) });
-  await page.goto(`${base}/?data=demo&mock=full&theme=dark&lang=es`, { waitUntil: 'load' });
+  await page.goto(`${base}/?data=${process.env.SMOKE_DATA || 'demo'}${process.env.SMOKE_MOCK ? '&mock=' + process.env.SMOKE_MOCK : ''}&theme=dark&lang=es`, { waitUntil: 'load' });
   await page.waitForSelector('.sheet[data-ready] .card', { timeout: 30000 });
   await page.waitForTimeout(1500);
   await step('kpi sheet: click, focus trap, Esc, focus return', async () => {

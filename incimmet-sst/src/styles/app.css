@@ -215,13 +215,15 @@ text.dl { fill: var(--text); font: 600 11px var(--font-cond); }
 .score b { font-weight: 500; }
 
 .risk { display: flex; flex-direction: column; gap: 5px; flex: 1 1 0; min-height: 0; }
-.risk-mx { flex: none; }
+.risk-mx { flex: 0 1 auto; min-height: 0; overflow-y: auto; }
 .mx { width: 100%; border-collapse: separate; border-spacing: 2px; table-layout: fixed; font-size: var(--fs-xs); }
 .mx th { font-weight: 400; color: var(--text-2); text-align: center; height: 16px; padding: 0; }
 .mx thead th:first-child { width: 27%; text-align: left; color: var(--text-3); }
 .mx tbody th { text-align: left; color: var(--text); }
 .mx td { padding: 0; }
-.mx-c { width: 100%; height: 22px; display: flex; align-items: center; justify-content: center; gap: 2px; border: 1px solid transparent; border-radius: 4px; background: var(--neutral-bg); font: 500 11px/1 var(--font-cond); cursor: pointer; padding: 0; color: var(--text); }
+.mx-c { width: 100%; height: 26px; overflow: hidden; display: flex; align-items: center; justify-content: center; gap: 2px; border: 1px solid transparent; border-radius: 4px; background: var(--neutral-bg); font: 500 11px/1 var(--font-cond); cursor: pointer; padding: 0; color: var(--text); }
+.mx-c .mx-v { display: flex; flex-direction: column; align-items: center; gap: 1px; line-height: 1; }
+.mx-c .mx-v i { font-style: normal; color: var(--text-2); }
 .mx-c:hover { border-color: var(--border-strong); }
 .mx-good { background: var(--ok-bg); } .mx-warn { background: var(--warn-bg); }
 .mx-crit { background: var(--crit-bg); border-color: color-mix(in srgb, var(--crit) 60%, transparent); }
@@ -244,7 +246,7 @@ text.dl { fill: var(--text); font: 600 11px var(--font-cond); }
 .req { padding-left: 16px; list-style: disc; color: var(--text-2); }
 
 .plan { display: flex; flex-direction: column; gap: 5px; flex: 1 1 0; min-height: 0; }
-.plan-hm { min-height: 0; }
+.plan-hm { flex: 1 1 0; min-height: 0; overflow-y: auto; overflow-x: hidden; }
 .plan-bars { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; flex: none; }
 .hm { width: 100%; border-collapse: separate; border-spacing: 2px; table-layout: fixed; font-size: 11px; line-height: 1; }
 .hm thead th { font-weight: 400; color: var(--text-3); height: 13px; padding: 0; text-align: center; }

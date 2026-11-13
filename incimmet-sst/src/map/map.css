@@ -78,8 +78,8 @@
 .rm-dot.is-hollow .rm-dot-mark{stroke:var(--tone-ink,var(--tone))}
 .rm-dot.is-dashed .rm-dot-fill{stroke-dasharray:2.6 2}
 .rm-dot-sel{fill:none;stroke:var(--accent);stroke-width:2}
-.rm-marker-tag{position:absolute;top:100%;left:50%;transform:translate(-50%,-4px);padding:1px 3px;border:1px solid var(--hairline);border-radius:3px;background:var(--surface);color:var(--text-2);font:600 9px/1 var(--font-cond);letter-spacing:.07em;white-space:nowrap;pointer-events:none}
-.rm-marker.is-selected .rm-marker-tag{color:var(--text);border-color:var(--accent);font-size:10px;letter-spacing:.02em}
+.rm-marker-tag{position:absolute;top:100%;left:50%;transform:translate(-50%,-4px);padding:1px 3px;border:1px solid var(--hairline);border-radius:3px;background:var(--surface);color:var(--text-2);font:600 11px/1 var(--font-cond);letter-spacing:.03em;white-space:nowrap;pointer-events:none}
+.rm-marker.is-selected .rm-marker-tag{color:var(--text);border-color:var(--accent)}
 
 /* tooltip, avisos, controles 3D */
 .rm-tip{position:absolute;z-index:20;transform:translateX(-50%);display:grid;gap:1px;width:max-content;max-width:240px;padding:6px 8px;border:1px solid var(--border-strong);border-radius:var(--radius-s);background:var(--surface-3);box-shadow:var(--shadow);color:var(--text);font-size:var(--fs-xs);pointer-events:none}

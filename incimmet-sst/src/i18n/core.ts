@@ -12,8 +12,14 @@ export function hasKey(lang: Lang, key: string): boolean { return Object.prototy
 export function allKeys(lang: Lang): string[] { return Object.keys(store[lang]); }
 export function translate(lang: Lang, key: string, params?: Record<string, string | number>): string {
   let s = store[lang][key] ?? store.es[key] ?? key;
-  if (params) s = s.replace(/\{(\w+)\}/g, (m, k: string) => (k in params ? String(params[k]) : m));
+  if (params) s = s.replace(/\{(\w+)\}/g, (m, k: string) => (k in params ? fmtParam(lang, k, params[k]) : m));
   return s;
+}
+/** Los números de los textos generados se muestran con el formato regional (1.234,5 · 12,34); años, filas e identificadores, tal cual. */
+const RAW_PARAM = /^(year|row|col|id|code|version|seed)$/i;
+function fmtParam(lang: Lang, key: string, v: string | number): string {
+  if (typeof v !== 'number' || !Number.isFinite(v) || RAW_PARAM.test(key)) return String(v);
+  return new Intl.NumberFormat(LOCALES[lang], { maximumFractionDigits: 2 }).format(v);
 }
 export type TFn = (key: string, params?: Record<string, string | number>) => string;
 export const makeT = (lang: Lang): TFn => (key, params) => translate(lang, key, params);
@@ -68,7 +74,7 @@ registerDict({
     'country.PE': 'Perú', 'country.CO': 'Colombia', 'country.BR': 'Brasil',
   },
   en: {
-    'unit.hh': 'hours worked', 'unit.people': 'people', 'unit.events': 'events', 'unit.cases': 'cases', 'unit.days': 'days', 'unit.hours': 'hours',
+    'unit.hh': 'hours', 'unit.people': 'people', 'unit.events': 'events', 'unit.cases': 'cases', 'unit.days': 'days', 'unit.hours': 'hours',
     'unit.pct': '%', 'unit.pp': 'pp', 'unit.per1e6hh': 'per 1,000,000 hours', 'unit.per200khh': 'per 200,000 hours', 'unit.per1e4hh': 'per 10,000 hours',
     'unit.per100workers': 'per 100 workers', 'unit.per100kworkers': 'per 100,000 workers', 'unit.score': 'points', 'unit.index': 'index',
     'unit.probability': 'probability', 'unit.count': 'n', 'unit.months': 'months', 'unit.none': '',

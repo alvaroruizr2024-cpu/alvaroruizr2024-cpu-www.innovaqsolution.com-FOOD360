@@ -47,7 +47,7 @@ export function Footer({ ctx }: { ctx: SheetCtx }) {
           })}
         </ul>
       ) : null}
-      <span className="ftr-ds trunc"><Database size={12} aria-hidden="true" /><span>{t(`ui.footer.kind.${model?.meta.datasetKind ?? 'none'}`)}{model?.meta.datasetLabel ? `: ${model.meta.datasetLabel}` : ''}</span></span>
+      <span className="ftr-ds trunc"><Database size={12} aria-hidden="true" /><span>{t(`ui.footer.kind.${model?.meta.datasetKind ?? 'none'}`)}{model?.meta.datasetKind === 'real' && model.meta.datasetLabel ? `: ${model.meta.datasetLabel}` : ''}</span></span>
     </footer>
   );
 }

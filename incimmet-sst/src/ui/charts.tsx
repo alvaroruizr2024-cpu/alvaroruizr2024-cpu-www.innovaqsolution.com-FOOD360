@@ -270,7 +270,7 @@ export function RiskMatrix({ model, t, fmt, onCell }: { model: RiskPanelModel; t
               return (
                 <td key={p.id}>
                   <button type="button" className={`mx-c mx-${c.status}`} {...tipProps(lines)} onClick={() => onCell(c)}>
-                    {c.status === 'crit' || c.status === 'warn' ? <StatusIcon level={c.status} size={9} /> : null}<span>{r0(c.coveragePct)}·{r0(c.effectivenessPct)}</span>
+                    {c.status === 'crit' || c.status === 'warn' ? <StatusIcon level={c.status} size={9} /> : null}<span className="mx-v"><span>{r0(c.coveragePct)}</span><i>{r0(c.effectivenessPct)}</i></span>
                   </button>
                 </td>
               );

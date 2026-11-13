@@ -18,3 +18,7 @@ View your app in AI Studio: https://ai.studio/apps/fc38b56f-c799-4fbb-b109-da119
 2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
 3. Run the app:
    `npm run dev`
+
+## INCIMMET | Centro Regional de Inteligencia SST
+
+La lámina ejecutiva SST está en [`incimmet-sst/`](incimmet-sst/README.md).
