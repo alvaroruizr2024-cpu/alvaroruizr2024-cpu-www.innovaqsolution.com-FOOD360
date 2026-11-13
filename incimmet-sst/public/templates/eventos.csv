@@ -1,0 +1,2 @@
+﻿evento_id,proyecto_id,fecha_ocurrencia,fecha_reporte,fecha_cierre,tipo,mecanismo,riesgo,potencial,alto_potencial,con_perdida,turno,empresa,actividad
+DEMO-EV-001,DEMO-01,2026-09-14,2026-09-14,,casi_accidente,golpeado_por,caida_de_rocas,4,si,no,dia,DEMO Contratista A,DEMO Desarrollo

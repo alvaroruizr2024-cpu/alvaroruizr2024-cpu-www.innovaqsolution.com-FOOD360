@@ -1,0 +1,2 @@
+﻿caso_id,evento_id,proyecto_id,clasificacion,relacion_laboral,dias_perdidos,dias_cargados,partes_cuerpo
+DEMO-CA-001,DEMO-EV-002,DEMO-01,tiempo_perdido,propio,12,0,mano;brazo

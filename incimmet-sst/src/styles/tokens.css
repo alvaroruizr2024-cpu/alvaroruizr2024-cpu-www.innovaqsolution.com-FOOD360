@@ -1,5 +1,7 @@
 /* TOKENS DE DISEÑO — «sala de control minera». #1D7DCC es el ancla de marca observada; el resto es propuesta de interfaz.
-   Verde/ámbar/rojo SOLO significan estado y siempre van con icono + texto. Verificar contraste antes de cambiar. */
+   Verde/ámbar/rojo SOLO significan estado y siempre van con icono + texto. Verificar contraste antes de cambiar.
+   --series-* (identidad PE · CO · BR) y --seq-* (ordinal) validados con el validador dataviz en ambas superficies.
+   --seq-5 es siempre el paso de MAYOR énfasis: el más claro en oscuro y el más oscuro en claro. */
 :root, :root[data-theme='dark'] {
   color-scheme: dark;
   --bg: #07182B; --surface: #102B46; --surface-2: #0C2238; --surface-3: #173A5C; --header: #0B3C63;
@@ -12,25 +14,27 @@
   --ok: #3DDC97; --warn: #F5B841; --crit: #FF6B6B; --neutral: #8FA5BC; --nodata: #5E748C;
   --ok-bg: rgba(61, 220, 151, 0.13); --warn-bg: rgba(245, 184, 65, 0.14); --crit-bg: rgba(255, 107, 107, 0.15); --neutral-bg: rgba(143, 165, 188, 0.12);
   /* gráficos */
-  --grid: rgba(182, 199, 217, 0.12); --axis: rgba(182, 199, 217, 0.32); --deemph: #5E748C; --target: #E8EEF5;
-  --series-1: #4C9BE8; --series-2: #E0763F; --series-3: #2FB58A;            /* identidad: PE · CO · BR (validar con el validador dataviz) */
-  --seq-1: #1F4E7A; --seq-2: #2A6CA8; --seq-3: #3F8FD4; --seq-4: #74B4EA; --seq-5: #B9DCF8;  /* ordinal un solo tono (niveles) */
+  --grid: rgba(182, 199, 217, 0.12); --axis: rgba(182, 199, 217, 0.32); --deemph: #6B829B; --target: #E8EEF5;
+  --series-1: #3B88D6; --series-2: #CF6630; --series-3: #1FA077;
+  --seq-1: #265F96; --seq-2: #3379B8; --seq-3: #4B95D9; --seq-4: #7DBBEE; --seq-5: #BCDFF9;
+  --ramp-ink-1: #FFFFFF; --ramp-ink-2: #FFFFFF; --ramp-ink-3: #06182B; --ramp-ink-4: #06182B; --ramp-ink-5: #06182B;
   /* mapa */
   --map-ocean: #06203A; --map-land: #133552; --map-land-focus: #1D5C8E; --map-border: rgba(84, 200, 240, 0.55); --map-graticule: rgba(182, 199, 217, 0.10);
 }
 :root[data-theme='light'] {
   color-scheme: light;
   --bg: #F3F7FB; --surface: #FFFFFF; --surface-2: #F7FAFD; --surface-3: #E8F0F8; --header: #0B3C63;
-  --text: #132D46; --text-2: #52657A; --text-3: #66798E;
+  --text: #132D46; --text-2: #52657A; --text-3: #5A6D82;
   --brand: #1D7DCC; --accent: #126A98; --on-accent: #FFFFFF;
   --border: rgba(18, 106, 152, 0.22); --border-strong: rgba(18, 106, 152, 0.45); --hairline: rgba(19, 45, 70, 0.10);
   --glow: 0 0 0 1px rgba(18, 106, 152, 0.16), 0 10px 24px -16px rgba(11, 60, 99, 0.35);
   --shadow: 0 12px 28px -18px rgba(11, 60, 99, 0.35);
   --ok: #12805C; --warn: #9A6700; --crit: #C62828; --neutral: #52657A; --nodata: #8496A8;
   --ok-bg: rgba(18, 128, 92, 0.10); --warn-bg: rgba(154, 103, 0, 0.11); --crit-bg: rgba(198, 40, 40, 0.09); --neutral-bg: rgba(82, 101, 122, 0.09);
-  --grid: rgba(19, 45, 70, 0.09); --axis: rgba(19, 45, 70, 0.28); --deemph: #A9B8C7; --target: #132D46;
-  --series-1: #1D6FC4; --series-2: #C4571F; --series-3: #14806A;
-  --seq-1: #0D3A66; --seq-2: #1C5E9F; --seq-3: #3A86D0; --seq-4: #7FB3E6; --seq-5: #B4D3F2;
+  --grid: rgba(19, 45, 70, 0.09); --axis: rgba(19, 45, 70, 0.28); --deemph: #7F93A9; --target: #132D46;
+  --series-1: #1D6FC4; --series-2: #C4571F; --series-3: #0B8A6A;
+  --seq-1: #86B6E6; --seq-2: #5795D6; --seq-3: #2F74BD; --seq-4: #1B5593; --seq-5: #0D3A66;
+  --ramp-ink-1: #0A1E33; --ramp-ink-2: #0A1E33; --ramp-ink-3: #FFFFFF; --ramp-ink-4: #FFFFFF; --ramp-ink-5: #FFFFFF;
   --map-ocean: #DCE9F5; --map-land: #F7FAFD; --map-land-focus: #BBD7EF; --map-border: rgba(18, 106, 152, 0.65); --map-graticule: rgba(19, 45, 70, 0.08);
 }
 :root {
@@ -39,7 +43,8 @@
   --font-mono: 'IBM Plex Mono', ui-monospace, 'SFMono-Regular', Menlo, monospace;
   --radius-s: 6px; --radius-m: 10px; --radius-l: 14px;
   --sp-1: 4px; --sp-2: 8px; --sp-3: 12px; --sp-4: 16px; --sp-5: 24px;
-  --fs-xs: clamp(10.5px, 0.60vw, 12px); --fs-s: clamp(11.5px, 0.68vw, 13px); --fs-m: clamp(12.5px, 0.74vw, 14.5px);
+  /* nunca por debajo de 11 px */
+  --fs-xs: clamp(11px, 0.62vw, 12px); --fs-s: clamp(11.5px, 0.68vw, 13px); --fs-m: clamp(12.5px, 0.74vw, 14.5px);
   --fs-l: clamp(14px, 0.9vw, 17px); --fs-xl: clamp(22px, 1.75vw, 34px);
   --dur: 180ms; --ease: cubic-bezier(.2, .7, .2, 1);
 }
