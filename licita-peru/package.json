@@ -11,7 +11,8 @@
     "db:generate": "drizzle-kit generate && node scripts/bundle-migrations.mjs",
     "db:migrate": "tsx scripts/migrate.ts",
     "seed": "tsx scripts/seed.ts",
-    "test": "vitest run"
+    "test": "vitest run",
+    "prueba:modelo": "tsx --env-file-if-exists=.env.local --env-file-if-exists=.env scripts/prueba-modelo.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^1.8.0",

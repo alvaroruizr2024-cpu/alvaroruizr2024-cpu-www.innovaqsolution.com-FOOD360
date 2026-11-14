@@ -11,7 +11,7 @@ import { sha256 } from "@/lib/cuentas";
 import { ahoraEn } from "@/lib/fechas";
 import { Anthropic, modeloPorDefecto, type MensajeApi, type Modelo, type RespuestaApi } from "./modelo";
 import { construirSystem, encargoEspecialista, ROLES_ESPECIALISTA, type RolEspecialista } from "./prompt";
-import { definicionesApi, ejecutarHerramienta, etiquetaHerramienta, type CtxHerramienta } from "./tools";
+import { definicionesApi, ejecutarHerramienta, esHerramientaWeb, etiquetaHerramienta, type CtxHerramienta } from "./tools";
 
 export type EventoUI =
   | { t: "conversacion"; id: string }
@@ -116,6 +116,27 @@ async function turnoConReintento(modelo: Modelo, p: Parameters<Modelo["turno"]>[
   }
 }
 
+// La búsqueda web debe estar habilitada en la cuenta del proveedor. Si la API la rechaza, el
+// agente sigue sin ella (y lo dice) en vez de quedar inutilizable.
+const g = globalThis as unknown as { __licitaWebRechazada?: boolean };
+
+async function turnoDelAgente(c: Corrida, p: Parameters<Modelo["turno"]>[0]): Promise<RespuestaApi> {
+  try {
+    return await turnoConReintento(c.modelo, p);
+  } catch (e) {
+    const usaWeb = p.tools.some(esHerramientaWeb);
+    if (!usaWeb || !(e instanceof Anthropic.BadRequestError) || !/web[_ ]?(search|fetch)|server[_ ]tool/i.test(e.message)) throw e;
+    console.warn("[agente] el proveedor rechazó las herramientas web; se continúa sin ellas:", e.message);
+    g.__licitaWebRechazada = true;
+    c.tools = c.tools.filter((t) => !esHerramientaWeb(t));
+    c.emitir({
+      t: "aviso",
+      mensaje: "La búsqueda web no está habilitada en la cuenta del proveedor del modelo. El agente continúa sin verificación en línea: lo que dependa de fuentes oficiales quedará como pendiente. Habilítela con el proveedor o defina AGENT_WEB=0.",
+    });
+    return turnoConReintento(c.modelo, { ...p, tools: c.tools });
+  }
+}
+
 type Corrida = {
   ctx: CtxHerramienta;
   modelo: Modelo;
@@ -150,7 +171,7 @@ async function pasadaEspecialista(c: Corrida, rol: RolEspecialista, encargo: str
   let informe = "";
   let iteraciones = 0;
   for (; iteraciones < 16; iteraciones++) {
-    const m = await turnoConReintento(c.modelo, {
+    const m = await turnoDelAgente(c, {
       model: env.modeloEspecialista,
       effort: env.esfuerzoEspecialista,
       maxTokens: Math.min(env.maxTokens, 32000),
@@ -234,7 +255,7 @@ export async function ejecutarTurno(o: { sesion: SesionAgente; conversationId: s
       proceso: { nombre: p.nombre, cliente: p.cliente, codigo: p.codigo, tipo: p.tipo, etapa: p.etapa, estado: p.estado, zonaHoraria: p.zonaHoraria },
       usuario: { nombre: sesion.usuarioNombre, rol: sesion.rol },
     }),
-    tools: definicionesApi(),
+    tools: definicionesApi(env.busquedaWeb && !g.__licitaWebRechazada),
     emitir,
     sesion,
     totales: { costo: 0, entrada: 0, salida: 0 },
@@ -259,7 +280,7 @@ export async function ejecutarTurno(o: { sesion: SesionAgente; conversationId: s
     let cerrado = false;
     for (let i = 0; i < env.maxIteraciones && !cerrado; i++) {
       if (o.signal?.aborted) break;
-      const m = await turnoConReintento(corrida.modelo, {
+      const m = await turnoDelAgente(corrida, {
         model: env.modeloAgente,
         effort: env.esfuerzo,
         maxTokens: env.maxTokens,

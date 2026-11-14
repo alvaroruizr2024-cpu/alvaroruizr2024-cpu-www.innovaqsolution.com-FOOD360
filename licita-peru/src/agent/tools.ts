@@ -601,13 +601,28 @@ export const HERRAMIENTAS: Herramienta[] = [
 ];
 const POR_NOMBRE = new Map(HERRAMIENTAS.map((h) => [h.nombre, h]));
 
+/** Deja el esquema en JSON Schema básico: sin metadatos ni cotas que solo añaden ruido. */
+function limpiarEsquema(v: unknown): unknown {
+  if (Array.isArray(v)) return v.map(limpiarEsquema);
+  if (!v || typeof v !== "object") return v;
+  const out: Record<string, unknown> = {};
+  for (const [k, val] of Object.entries(v as Record<string, unknown>)) {
+    if (k === "$schema" || k === "propertyNames") continue;
+    if ((k === "maximum" || k === "minimum") && typeof val === "number" && Math.abs(val) >= Number.MAX_SAFE_INTEGER) continue;
+    out[k] = limpiarEsquema(val);
+  }
+  return out;
+}
+
+export const esHerramientaWeb = (t: BetaToolUnion) => "type" in t && typeof t.type === "string" && /^web_(search|fetch)_/.test(t.type);
+
 /** Definiciones para la API, en orden fijo (el prefijo de herramientas se cachea). */
-export function definicionesApi(): BetaToolUnion[] {
+export function definicionesApi(conWeb = env.busquedaWeb): BetaToolUnion[] {
   const propias: BetaToolUnion[] = HERRAMIENTAS.map((h) => {
-    const { $schema: _omit, ...input_schema } = z.toJSONSchema(h.esquema) as Record<string, unknown>;
-    return { name: h.nombre, description: h.descripcion, input_schema: input_schema as BetaToolInputSchema, eager_input_streaming: true };
+    const input_schema = limpiarEsquema(z.toJSONSchema(h.esquema)) as BetaToolInputSchema;
+    return { name: h.nombre, description: h.descripcion, input_schema, eager_input_streaming: true };
   });
-  if (!env.busquedaWeb) return propias;
+  if (!conWeb) return propias;
   return [...propias, { type: "web_search_20260209", name: "web_search", max_uses: 8 }, { type: "web_fetch_20260209", name: "web_fetch", max_uses: 8 }];
 }
 

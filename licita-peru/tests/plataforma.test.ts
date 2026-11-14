@@ -332,3 +332,37 @@ describe("exportaciones", () => {
     expect(ics).toMatch(/DTSTART;VALUE=DATE:20261126/);
   });
 });
+
+describe("degradación de la búsqueda web", () => {
+  it("si el proveedor rechaza las herramientas web, el agente sigue sin ellas y avisa", async () => {
+    const { Anthropic } = await import("@/agent/modelo");
+    const o = await nuevaOrg();
+    const conv = await crearConversacion(o.org.id, o.proceso.id, o.user.id);
+    const eventos: EventoUI[] = [];
+    const tieneWeb = (p: { tools: { type?: string }[] }) => p.tools.some((t) => String(t.type ?? "").startsWith("web_"));
+    const modelo = new ModeloGuion([
+      (p) => {
+        expect(tieneWeb(p as never)).toBe(true);
+        throw Anthropic.APIError.generate(400, { type: "error", error: { type: "invalid_request_error", message: "web_search tool is not enabled for this organization" } }, undefined, new Headers());
+      },
+      (p) => {
+        expect(tieneWeb(p as never)).toBe(false);
+        expect(p.tools.length).toBe(18);
+        return mensaje([texto("Sigo sin búsqueda web.")], "end_turn");
+      },
+    ]);
+    await ejecutarTurno({ sesion: sesionDe(o), conversationId: conv.id, texto: "Verifica el régimen", emitir: (e) => eventos.push(e), modelo });
+    expect((eventos.find((e) => e.t === "aviso") as { mensaje: string }).mensaje).toMatch(/búsqueda web no está habilitada/);
+    expect(eventos.some((e) => e.t === "error")).toBe(false);
+    // Otros errores 400 no se disfrazan: llegan al usuario.
+    const conv2 = await crearConversacion(o.org.id, o.proceso.id, o.user.id);
+    const ev2: EventoUI[] = [];
+    const modelo2 = new ModeloGuion([
+      () => {
+        throw Anthropic.APIError.generate(400, { type: "error", error: { type: "invalid_request_error", message: "max_tokens: too large" } }, undefined, new Headers());
+      },
+    ]);
+    await ejecutarTurno({ sesion: sesionDe(o), conversationId: conv2.id, texto: "Hola", emitir: (e) => ev2.push(e), modelo: modelo2 });
+    expect((ev2.find((e) => e.t === "error") as { mensaje: string }).mensaje).toMatch(/rechazó la solicitud/);
+  });
+});

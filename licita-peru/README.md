@@ -93,6 +93,19 @@ npm run typecheck
 
 Cubren: aislamiento entre organizaciones y entre empresas, compuertas de estado, validación de matrices, cálculo de plazos, el bucle del agente con un modelo con guion (herramientas, historial reproducido byte a byte, `pause_turn`, rechazos, especialistas de solo lectura, tope de consumo), cuentas e invitaciones, y exportaciones.
 
+### Prueba en vivo del agente
+
+Las pruebas anteriores usan un modelo con guion y no llaman a la API. Para confirmar que su clave, el modelo y las herramientas funcionan de verdad:
+
+```bash
+npm run prueba:modelo       # lee .env.local o .env; gasta tokens reales (normalmente menos de 2 USD)
+```
+
+Crea una organización temporal con unas bases de ejemplo, ejecuta dos turnos (diagnóstico y auditoría final con un especialista), muestra lo que el agente guardó y el consumo, y borra todo. **Ejecútela antes de abrir el servicio a clientes**: durante el desarrollo no se pudo llamar al modelo real, así que esta es la primera comprobación de extremo a extremo con IA.
+
+Si la cuenta del proveedor no tiene habilitada la búsqueda web, el agente lo avisa y sigue sin ella; habilítela en la consola del proveedor y reinicie la aplicación, o defina `AGENT_WEB=0`.
+
+
 ## Antes de vender: pendientes conocidos
 
 Esto es una primera versión funcional. Para operar con clientes de pago falta decidir o construir:
