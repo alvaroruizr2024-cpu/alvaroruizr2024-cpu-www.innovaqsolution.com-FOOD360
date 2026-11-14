@@ -4,15 +4,8 @@ import { and, eq, gt, isNull } from "drizzle-orm";
 import { db, schema } from "@/db/client";
 import { env } from "./env";
 
-export const ROLES = ["propietario", "admin", "editor", "revisor", "lector"] as const;
-export type Rol = (typeof ROLES)[number];
-export const ROL_ETIQUETA: Record<Rol, string> = {
-  propietario: "Propietario",
-  admin: "Administrador",
-  editor: "Editor",
-  revisor: "Revisor / aprobador",
-  lector: "Solo lectura",
-};
+export { ROLES, ROL_ETIQUETA, type Rol } from "./roles";
+import { ROLES, type Rol } from "./roles";
 
 const N = 1 << 15;
 const R = 8;

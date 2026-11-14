@@ -423,3 +423,13 @@ export async function bitacora(orgId: string, processId: string, limite = 200) {
     .orderBy(desc(schema.auditLog.id))
     .limit(limite);
 }
+
+/** Todas las filas visibles desde un proceso (propias y corporativas), para resúmenes. */
+export async function todosLosRegistros(a: Ambito) {
+  const ids = [a.companyId, ...(a.processId ? [a.processId] : [])];
+  return db
+    .select({ tabla: schema.registros.tabla, codigo: schema.registros.codigo, data: schema.registros.data, processId: schema.registros.processId, actualizadoPor: schema.registros.actualizadoPor, orden: schema.registros.orden })
+    .from(schema.registros)
+    .where(and(eq(schema.registros.orgId, a.orgId), inArray(schema.registros.ambitoId, ids)))
+    .orderBy(asc(schema.registros.orden), asc(schema.registros.createdAt));
+}

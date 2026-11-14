@@ -65,12 +65,22 @@ export class ModeloDePrueba implements Modelo {
             ],
           }),
           usar("calcular_plazo", { desde: "2026-11-12", dias: 5, tipo: "habiles" }),
+          usar("guardar_registros", { tabla: "hitos", registros: [{ codigo: "PRUEBA-H1", hito: "Hito de ejemplo del modo de prueba", fecha: "2026-11-19", regla: "Guion de prueba", tipo: "estimado", critico: true }] }),
+          usar("plantear_preguntas", { preguntas: [{ pregunta: "[Prueba] ¿Quién será la persona designada para la evaluación?", motivo: "Pregunta de ejemplo del modo de prueba; puede descartarla." }] }),
+          usar("crear_entregable", {
+            tipo: "diagnostico",
+            titulo: "Documento de ejemplo del modo de prueba",
+            contenido_markdown:
+              "# Documento de ejemplo\n\nEste texto lo generó el **modo de prueba**, no un modelo de IA. Sirve para comprobar la descarga en Word y PDF.\n\n| Elemento | Estado |\n|---|---|\n| Flujo de herramientas | verificado |\n| Análisis real | [PENDIENTE: requiere configurar el modelo] |\n\n- Primer punto\n- Segundo punto\n",
+            destino: "interno",
+          }),
+          usar("solicitar_aprobacion", { accion: "enviar", descripcion: "[Prueba] Solicitud de ejemplo del modo de prueba", destinatario: "Nadie (ejemplo)", version: "v0 de prueba", contenido: "Sin contenido real", efecto: "Ninguno: es una solicitud de demostración; puede rechazarla." }),
         ],
         "tool_use",
       );
     }
     const t =
-      "[Modo de prueba sin modelo] El flujo funciona: leí el contexto, guardé una fila de ejemplo en la matriz maestra (PRUEBA-01) y calculé un plazo. " +
+      "[Modo de prueba sin modelo] El flujo funciona: leí el contexto, guardé una fila de ejemplo en la matriz (PRUEBA-01), un hito, una pregunta, un entregable y una solicitud de aprobación, todos marcados como prueba. " +
       "Esto no es un análisis real: configure ANTHROPIC_API_KEY y quite AGENT_FAKE para activar el agente.";
     await decir(t);
     return respuesta([{ type: "text", text: t }], "end_turn");
