@@ -1,0 +1,13 @@
+{
+  "id": "P016",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "No conozco a INNOVAQ ni veo una sola contratista como la mía que lo use, y no voy a subir mis IPERC y mis documentos ISO a la nube de una empresa que no sé si va a existir el próximo año. Mi Excel y mis carpetas me sacan de apuros, mal que bien, y no me cuestan S/ 292 todos los meses.",
+  "objection": "No sé quiénes son: no hay clientes, casos ni referencias de contratistas mineras o de construcción. Además paso medio mes en la unidad minera con mala señal, y un sistema en la nube que no abre en obra no me sirve justo donde se llenan los registros.",
+  "would_change_my_mind": "Que me presenten dos o tres contratistas de mi tamaño que lo usen y hayan pasado con eso una auditoría u homologación de la minera, y que yo pueda llamarlas; y que me demuestren que funciona sin conexión en obra.",
+  "price_too_cheap": 12,
+  "price_cheap": 30,
+  "price_expensive": 70,
+  "price_too_expensive": 120
+}

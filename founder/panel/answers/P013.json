@@ -1,0 +1,13 @@
+{
+  "id": "P013",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "convenience",
+  "reason": "Abro la prueba gratis esta misma semana, eso sí, porque la observación de SUNAFIL me tiene preocupada. Pero pagar no: con 250 trabajadores tengo años de IPERC, registros y procedimientos en Excel y carpetas, y si en la primera semana sigo cargando datos en vez de ahorrar tiempo, la cierro como cierro casi todas.",
+  "objection": "El problema no es el precio al mes, es el tiempo que toma implementarlo: quién sube todo lo que ya tenemos, cuántas semanas pasan hasta que el sistema me sirva frente a una inspección, y si 10 usuarios y 1 sede me alcanzan o termino en el plan de US$ 179.",
+  "would_change_my_mind": "Que dentro de la prueba ellos mismos carguen mis documentos y registros actuales y me dejen en dos semanas, con fecha comprometida, los registros de la Ley 29783 listos para mostrarle a SUNAFIL.",
+  "price_too_cheap": 30,
+  "price_cheap": 70,
+  "price_expensive": 200,
+  "price_too_expensive": 400
+}

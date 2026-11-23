@@ -1,0 +1,13 @@
+{
+  "id": "P012",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Ya lo llevo en Excel con mi consultor y me aprueban las auditorías. La minera me pide los registros completos con fecha, no me pide un software, y a tres semanas de la homologación no voy a ponerme a migrar todo a un sistema nuevo.",
+  "objection": "Que termine pagando S/ 292 al mes además de mi consultor por algo que el cliente no exige, y que encima me toque a mí o a mi gente cargar toda la información justo cuando estoy contra el tiempo con la auditoría.",
+  "would_change_my_mind": "Que la minera o la empresa homologadora me exija o me puntúe llevar los registros en una plataforma, o que ustedes se comprometan por escrito y a precio cerrado a dejarme los registros que me faltan listos antes de la auditoría.",
+  "price_too_cheap": 10,
+  "price_cheap": 25,
+  "price_expensive": 60,
+  "price_too_expensive": 90
+}

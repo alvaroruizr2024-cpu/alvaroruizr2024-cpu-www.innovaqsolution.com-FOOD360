@@ -1,0 +1,13 @@
+{
+  "id": "P017",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Mis registros de seguridad y los documentos ISO ya están en Excel y en carpetas compartidas, y mi gente sabe dónde está cada cosa. Por US$ 79 al mes no me meto a pasar todo a un sistema nuevo y a capacitar a todos, menos ahora que paso medio mes en la unidad minera.",
+  "objection": "Pasar todos mis registros y capacitar a mi gente me va a tomar meses, y encima es en la nube: en obra y en mina casi no tengo señal, y en ningún lado dice que funcione sin conexión. Si no puedo llenar un IPERC en campo, termino llevando el Excel igual y pagando el software de más.",
+  "would_change_my_mind": "Que ellos mismos me carguen mis Excel y mis carpetas al sistema y capaciten a mi gente dentro del precio, en un par de semanas y sin cotización aparte, y que me demuestren que se puede registrar en campo sin internet. O que la minera me lo exija en la próxima auditoría.",
+  "price_too_cheap": 15,
+  "price_cheap": 40,
+  "price_expensive": 90,
+  "price_too_expensive": 150
+}
