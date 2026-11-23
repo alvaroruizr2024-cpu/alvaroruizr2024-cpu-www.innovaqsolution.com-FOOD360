@@ -33,7 +33,7 @@ El resultado del año depende de un ritmo de ventas estimado (de 3 a 43 clientes
 
 - **Panel simulado (20 compradores):** ninguno pagaría hoy. Motivos: costumbre (7), confianza (7), comodidad de uso (4), no lo necesitan ahora (2). Ninguno por precio. El rango de precio aceptable va de US$ 29,70 a US$ 110,90.
 - **Competidores:** ninguno de los 7 verificados junta cuatro normas ISO, Ley 29783, precio público de US$ 100 o menos y consultoría propia. El hueco es de combinación, no de precio, y no está probado con compradores. Los datos vienen de resultados de búsqueda.
-- **Directorio:** en revisión. El directorio se está volviendo a reunir con el costo fijo corregido; el resultado se añade al terminar.
+- **Directorio:** 3 votos de "financiar si", puntaje medio de 4,7 sobre 10. Dos de los tres advierten que hoy, tal como está el sitio o con el catálogo completo, votarían en contra.
 - **Prueba con compradores reales:** ninguna todavía.
 
 ## Para qué es el dinero

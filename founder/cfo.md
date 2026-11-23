@@ -18,7 +18,8 @@
   1. **Subir el ingreso por cliente a US$ 200** con un paquete de software más acompañamiento: el equilibrio baja de 19 a 8 clientes y el año pasa de US$ 931 a US$ 28.404 con el mismo ritmo. Incluso entrando un solo cliente neto al mes, el año cierra en US$ 2.750. Estas cifras todavía no descuentan lo que cuesta prestar el servicio.
   2. **No apoyarse en el plan de US$ 29.** A ese precio el equilibrio sube a 56 clientes y el año pierde US$ 10.421 con el mismo ritmo.
   3. **Probar US$ 99 en el plan Inicial:** el equilibrio baja a 15 clientes y el año sube a US$ 5.472. Hay que probarlo con compradores reales, porque 11 de 20 del panel ya lo sienten caro.
-- **Las condiciones de dinero del directorio** están en [`board.md`](board.md), con su estado después de estos números.
+- **Contratar cambia la cuenta.** Una primera persona de S/ 2.000 a 4.500 al mes sube el equilibrio de 19 a entre 27 y 36 clientes a US$ 79. A US$ 200 por cliente lo deja entre 11 y 14.
+- **Las condiciones de dinero del directorio** están en [`board.md`](board.md), con su estado después de estos números. La 14 (US$ 200 o más por cliente) no se cumple hoy. La 15b (el software cubre solo los costos fijos en doce meses) se cumple en el papel: el ritmo supuesto llega a 19 clientes en el mes 7.
 
 **Una pregunta que cambia la lectura.** Si los S/ 5.000 no incluyen un sueldo para usted, la ganancia de este modelo es lo que le queda por su trabajo, no un excedente.
 
@@ -44,6 +45,10 @@ Esto no es asesoría financiera, tributaria ni legal. Un contador debe revisar l
 | US$ 200 por cliente | US$ 185,90 | 8 | US$ 28.404 | US$ 1.264 |
 | US$ 200 por cliente, solo 1 cliente neto más al mes | US$ 185,90 | 8 | US$ 2.750 | US$ 2.108 |
 | Costos fijos de S/ 3.000 (US$ 811) | US$ 71,43 | 12 | US$ 7.411 | US$ 1.458 |
+| Con una primera contratación de S/ 2.000 al mes | US$ 71,43 | 27 | -US$ 5.561 | US$ 8.136 |
+| Con una primera contratación de S/ 4.500 al mes | US$ 71,43 | 36 | -US$ 13.661 | US$ 14.313 |
+| US$ 200 por cliente, con una contratación de S/ 2.000 | US$ 185,90 | 11 | US$ 21.912 | US$ 2.920 |
+| US$ 200 por cliente, con una contratación de S/ 4.500 | US$ 185,90 | 14 | US$ 13.812 | US$ 5.771 |
 
 En los escenarios con otro precio la comisión de cobro se recalculó con la misma fórmula (5,4% más US$ 0,30). Por eso difieren un poco de la tabla *What if* de abajo, que cambia el precio sin tocar los costos.
 

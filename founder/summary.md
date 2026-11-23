@@ -12,13 +12,11 @@
 
 **En qué coincidieron el directorio y el panel.**
 
-- El precio no es el freno: ninguno de los 20 compradores simulados dejó de comprar por caro.
-- Falta prueba: 10 de 20 compradores piden referencias o casos de contratistas como ellos.
-- Se vende una herramienta cuando el comprador quiere un resultado: 10 de 20 piden que la empresa les cargue sus registros.
+- El precio no es el freno. Ninguno de los 20 compradores simulados dejó de comprar por caro, y el directorio advirtió que competir por barato no deja dinero para el servicio que el comprador necesita.
+- Falta prueba. Los tres miembros del directorio piden casos con nombre; 10 de 20 compradores piden referencias o casos de contratistas como ellos.
+- Se vende una herramienta cuando el comprador quiere un resultado: 10 de 20 piden que la empresa les cargue sus registros, y los tres miembros del directorio señalan que hay pocas manos para hacer ese trabajo.
 
-El directorio se está volviendo a reunir con el costo fijo corregido; su voto se añade aquí al terminar.
-
-**En qué no coincidieron.** Pendiente de la nueva reunión del directorio.
+**En qué no coincidieron.** El directorio votó "financiar si" tres veces, con puntaje medio de 4,7 sobre 10 (5, 5 y 4). El panel fue más duro: 0 de 20 pagarían hoy. El directorio discutió si el precio público es una fortaleza; al panel el precio le dio igual y lo que pidió fue trabajar sin señal en campo (5 de 20), más usuarios sin saltar de plan (7 de 20) y saber si su cliente minero o el inspector aceptan lo que sale del sistema (9 de 20).
 
 **El riesgo mayor.** Que los clientes no lleguen al ritmo supuesto. La empresa es barata de sostener, pero el plan depende de pasar de 3 a 43 clientes en un año y el panel no lo respalda: 0 de 20 pagarían hoy y 8 abrirían la prueba gratuita sin pagar. Lo que se hace al respecto: conseguir casos con nombre, ofrecer un paquete en el que INNOVAQ carga los registros del cliente y lo acompaña hasta la auditoría, y probarlo con contratistas reales antes de gastar en publicidad.
 
