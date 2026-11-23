@@ -5,8 +5,8 @@ Se apoya en tres cosas que se pueden comprobar: lo que dijeron los compradores (
 ## Lo esencial
 
 - **El precio no es el problema.** Ninguno de los 20 compradores simulados dio el precio como razón para no comprar, y cuatro lo dijeron expresamente ("el precio no es el problema, es el cambio").
-- **Mantenga US$ 79 en el plan Inicial.** Bajarlo no responde a ninguna de las objeciones y aleja el punto de equilibrio de 105 a 142 clientes.
-- **El dinero está en el escalón siguiente, que hoy no existe:** un paquete de software más acompañamiento cerca de US$ 200 al mes. Con ese ingreso por cliente el equilibrio baja a 40 clientes. Hay que construirlo y probarlo con contratistas reales antes de darlo por bueno.
+- **Mantenga US$ 79 en el plan Inicial.** Bajarlo no responde a ninguna de las objeciones y aleja el punto de equilibrio de 19 a 26 clientes.
+- **El dinero está en el escalón siguiente, que hoy no existe:** un paquete de software más acompañamiento cerca de US$ 200 al mes. Con ese ingreso por cliente el equilibrio baja de 19 a 8 clientes. Hay que construirlo y probarlo con contratistas reales antes de darlo por bueno.
 
 ## 1. El precio, y por qué
 
@@ -39,28 +39,29 @@ Para una empresa de hasta 10 usuarios, entre los que publican precio: US$ 79 (IS
 
 ### Lo que la empresa necesita
 
-Resultados de la herramienta del CFO, con el costo fijo medio de US$ 7.432 al mes:
+Resultados de la herramienta del CFO, con costos fijos de US$ 1.351 al mes (el tope de S/ 5.000 que indicó el fundador):
 
 | Precio al mes | Lo que deja cada cliente | Clientes para cubrir los costos fijos |
 | ---: | ---: | ---: |
-| US$ 29 | US$ 24,13 | 308 |
-| US$ 59 | US$ 52,51 | 142 |
-| **US$ 79** | **US$ 71,43** | **105** |
-| US$ 99 | US$ 90,35 | 83 |
-| US$ 179 | US$ 166,03 | 45 |
-| US$ 200 | US$ 185,90 | 40 |
+| US$ 29 | US$ 24,13 | 56 |
+| US$ 39 | US$ 33,59 | 41 |
+| US$ 59 | US$ 52,51 | 26 |
+| **US$ 79** | **US$ 71,43** | **19** |
+| US$ 99 | US$ 90,35 | 15 |
+| US$ 179 | US$ 166,03 | 9 |
+| US$ 200 | US$ 185,90 | 8 |
 
 ### La decisión
 
-**Plan Inicial: US$ 79 al mes, sin cambios.** Está dentro del rango aceptable, iguala al competidor publicado más barato y nadie lo rechazó por caro. No lo baje: a US$ 59 harían falta 37 clientes más para cubrir los mismos costos y no se resuelve ninguna objeción. Subirlo a US$ 99 ahorraría 22 clientes de equilibrio, pero 11 de 20 ya lo sienten caro; es una prueba para hacer con compradores reales, no una decisión para tomar hoy.
+**Plan Inicial: US$ 79 al mes, sin cambios.** Está dentro del rango aceptable, iguala al competidor publicado más barato y nadie lo rechazó por caro. No lo baje: a US$ 59 harían falta 26 clientes en lugar de 19 para cubrir los mismos costos, el año pasaría de ganar US$ 931 a perder US$ 3.610 y no se resuelve ninguna objeción. Subirlo a US$ 99 bajaría el equilibrio a 15 clientes, pero 11 de 20 ya lo sienten caro; es una prueba para hacer con compradores reales, no una decisión para tomar hoy.
 
 ## 2. La escalera
 
 | Escalón | Qué es | Precio | Por qué subir |
 | --- | --- | --- | --- |
-| Entrada | SIG 360° para 3 usuarios y 1 sede | Hoy US$ 29. **Probar US$ 39** | US$ 29 queda por debajo de la línea de "demasiado barato" (4 de 20 desconfían) y exige 308 clientes para cubrir los costos |
+| Entrada | SIG 360° para 3 usuarios y 1 sede | Hoy US$ 29. **Probar US$ 39** | US$ 29 queda por debajo de la línea de "demasiado barato" (4 de 20 desconfían) y exige 56 clientes para cubrir los costos, casi el triple que el plan Inicial |
 | Bueno | SIG 360° Inicial, 10 usuarios y 1 sede | **US$ 79** | El plan de referencia |
-| Mejor | SIG 360° más acompañamiento: la empresa carga los documentos y registros del cliente y una persona con nombre lo acompaña hasta la auditoría | **Probar US$ 199 y US$ 249 al mes** | Responde a lo que pidieron 10 de 20 (que les carguen sus registros). Queda al nivel del servicio externo más barato (unos US$ 203 más IGV) y cumple la condición del directorio de US$ 200 por cliente |
+| Mejor | SIG 360° más acompañamiento: la empresa carga los documentos y registros del cliente y una persona con nombre lo acompaña hasta la auditoría | **Probar US$ 199 y US$ 249 al mes** | Responde a lo que pidieron 10 de 20 (que les carguen sus registros). Queda al nivel del servicio externo más barato (unos US$ 203 más IGV) y baja el equilibrio a 8 clientes |
 | Completo | Implementación ISO o del sistema de la Ley 29783 como proyecto cerrado | Por cotización, publicando un "desde" | El comprador ya paga entre S/ 12.000 y 35.000 por esto a un consultor (una sola fuente) |
 
 Dos arreglos en la escalera actual:

@@ -3,18 +3,18 @@
 **Verdict: Not yet**
 
 - ✓ Each cliente-mes earns $71.43 before fixed costs (90% contribution).
-- ✗ Year 1 operating LOSS: $72,041.
+- ✓ Year 1 operating profit: $931.
 - ✗ 0 of 20 simulated buyers buy (0%, the bar is 25%).
 
 | key number | |
 | --- | ---: |
 | Price | $79.00 a cliente-mes |
-| Profit margin at plan | -128% per cliente-mes |
-| Break-even | 105 cliente-mess a day |
-| Year 1 operating profit | $-72,041 |
+| Profit margin at plan | 51% per cliente-mes |
+| Break-even | 19 cliente-mess a day |
+| Year 1 operating profit | $931 |
 | Startup spend | $0 |
-| Cash needed before it pays for itself | $72,041 |
-| Startup money earned back | not in year 1 |
+| Cash needed before it pays for itself | $4,249 |
+| Startup money earned back | month 12 |
 | Buyer panel | 0 buy · 20 pass |
 
 ## The idea
@@ -55,33 +55,37 @@ Fuente de todo lo que sigue: el sitio público www.innovaqsolution.com (páginas
 
 ## Summary
 
-**Veredicto: todavía no.** Lo calculó la herramienta del plan, no una opinión. Para que cambie tienen que cambiar dos cosas: lo que se ofrece al comprador (lo trabaja `/founder-offer`) y lo que cada cliente paga al mes (`/founder-pricing` y `/founder-cfo`).
+**Veredicto: todavía no.** Lo calculó la herramienta del plan, no una opinión. De sus tres comprobaciones falla una: ningún comprador simulado paga con la oferta actual. Lo que tiene que cambiar es la oferta, y eso lo trabaja `/founder-offer`.
 
 **Qué es.** INNOVAQ Solutions, de Trujillo, vende once plataformas de software por suscripción y consultoría en sistemas de gestión. Aquí se evaluó su oferta principal: SIG 360°, software para llevar las normas ISO y la Ley 29783, con consultoría, para contratistas de minería, construcción y energía en Perú.
 
 **Los tres números detrás del veredicto.**
 
-- Cada cliente deja US$ 71,43 al mes después de sus costos directos (90% del precio de US$ 79). Esa parte está bien.
-- Hacen falta 105 clientes de pago para cubrir los costos fijos (entre 57 y 152 según el rango de costos que dio el fundador). Hoy hay entre 1 y 5.
-- El primer año la línea de software pierde US$ 72.041 con el ritmo de ventas supuesto, si tiene que sostener sola a la empresa. Los ingresos de consultoría no se informaron y no están en la cuenta.
+- Cada cliente deja US$ 71,43 al mes después de sus costos directos (90% del precio de US$ 79).
+- Hacen falta 19 clientes de pago para cubrir los costos fijos, que no superan S/ 5.000 al mes. Hoy hay entre 1 y 5.
+- El primer año cierra con US$ 931 de ganancia si se cumple el ritmo de ventas supuesto (de 3 a 43 clientes). Con 10% menos de clientes ya pierde US$ 783. Los ingresos de consultoría no se informaron y no están en la cuenta.
 
 **En qué coincidieron el directorio y el panel.**
 
-- El precio no es el freno. Ninguno de los 20 compradores simulados dejó de comprar por caro, y el directorio advirtió que competir por barato no sostiene a la empresa.
-- Falta prueba. Los tres miembros del directorio piden casos con nombre; 10 de 20 compradores piden referencias o casos de contratistas como ellos.
-- Se vende una herramienta cuando el comprador quiere un resultado: 10 de 20 piden que la empresa les cargue sus registros, y dos de los tres miembros del directorio piden un paquete con acompañamiento hasta la auditoría.
+- El precio no es el freno: ninguno de los 20 compradores simulados dejó de comprar por caro.
+- Falta prueba: 10 de 20 compradores piden referencias o casos de contratistas como ellos.
+- Se vende una herramienta cuando el comprador quiere un resultado: 10 de 20 piden que la empresa les cargue sus registros.
 
-**En qué no coincidieron.** El directorio votó "financiar si" tres veces, con puntaje de 4 sobre 10. El panel fue más duro: 0 de 20 pagarían hoy. El directorio discutió si el precio público es una fortaleza; al panel el precio le dio igual y lo que pidió fue trabajar sin señal en campo (5 de 20), más usuarios sin saltar de plan (7 de 20) y saber si su cliente minero o el inspector aceptan lo que sale del sistema (9 de 20).
+El directorio se está volviendo a reunir con el costo fijo corregido; su voto se añade aquí al terminar.
 
-**El riesgo mayor.** Que el software por sí solo no sostenga a la empresa: once productos, un equipo pequeño y un precio que exige más de cien clientes. Lo que se hace al respecto: concentrarse en un solo comprador, vender un paquete de software más acompañamiento que deje cerca de US$ 200 al mes por cliente (el equilibrio baja a 40 clientes) y conseguir casos con nombre antes de gastar en publicidad.
+**En qué no coincidieron.** Pendiente de la nueva reunión del directorio.
 
-**Qué hace falta para empezar.** Caja para cubrir hasta US$ 72.041 de pérdida de la línea de software en el primer año, o ingresos de consultoría de unos US$ 6.003 al mes que la cubran. Y una primera prueba real, que este plan todavía no tiene: tres contratistas con una auditoría fechada, pagando por un piloto en el que INNOVAQ les carga los registros.
+**El riesgo mayor.** Que los clientes no lleguen al ritmo supuesto. La empresa es barata de sostener, pero el plan depende de pasar de 3 a 43 clientes en un año y el panel no lo respalda: 0 de 20 pagarían hoy y 8 abrirían la prueba gratuita sin pagar. Lo que se hace al respecto: conseguir casos con nombre, ofrecer un paquete en el que INNOVAQ carga los registros del cliente y lo acompaña hasta la auditoría, y probarlo con contratistas reales antes de gastar en publicidad.
+
+**Qué hace falta para empezar.** US$ 4.249 de caja para los seis primeros meses si el ritmo se cumple, y hasta US$ 13.641 en el año si los clientes no crecen. Y una primera prueba real, que este plan todavía no tiene: tres contratistas con una auditoría fechada, pagando por un piloto en el que INNOVAQ les carga los registros.
 
 **Lo único que hay que hacer esta semana.** Llamar a los clientes actuales y conseguir que uno acepte publicar su nombre y su resultado. Sin un caso real, ni el sitio ni el precio mueven al comprador.
 
-El panel son compradores simulados y los números son proyecciones hechas con un rango de costos y varias estimaciones. Los clientes reales y las cotizaciones reales los confirman o los corrigen. Esto no es asesoría financiera, legal ni tributaria.
+El panel son compradores simulados y los números son proyecciones hechas con un tope de costos dicho de palabra y varias estimaciones. Los clientes reales y las cotizaciones reales los confirman o los corrigen. Esto no es asesoría financiera, legal ni tributaria.
 
 ## What the board said
+
+> **En revisión.** Este resumen se escribió cuando el informe decía, por error, que los costos fijos eran de S/ 15.000 a 40.000 al mes. El fundador corrigió el dato: no superan S/ 5.000. El directorio se está volviendo a reunir con la cifra correcta; las cifras de equilibrio de esta versión (105 clientes, etc.) ya no valen. Los números vigentes están en [`cfo.md`](cfo.md).
 
 Los tres miembros aplican marcos publicados (la lente de la Oferta, la del Monopolio y la del Producto). No hablan en nombre de los autores de esos marcos ni los citan. Memos completos: [`board/offers.md`](board/offers.md), [`board/monopoly.md`](board/monopoly.md), [`board/product.md`](board/product.md). Lo que leyeron: [`board/brief.md`](board/brief.md).
 
@@ -557,8 +561,8 @@ Se apoya en tres cosas que se pueden comprobar: lo que dijeron los compradores (
 ### Lo esencial
 
 - **El precio no es el problema.** Ninguno de los 20 compradores simulados dio el precio como razón para no comprar, y cuatro lo dijeron expresamente ("el precio no es el problema, es el cambio").
-- **Mantenga US$ 79 en el plan Inicial.** Bajarlo no responde a ninguna de las objeciones y aleja el punto de equilibrio de 105 a 142 clientes.
-- **El dinero está en el escalón siguiente, que hoy no existe:** un paquete de software más acompañamiento cerca de US$ 200 al mes. Con ese ingreso por cliente el equilibrio baja a 40 clientes. Hay que construirlo y probarlo con contratistas reales antes de darlo por bueno.
+- **Mantenga US$ 79 en el plan Inicial.** Bajarlo no responde a ninguna de las objeciones y aleja el punto de equilibrio de 19 a 26 clientes.
+- **El dinero está en el escalón siguiente, que hoy no existe:** un paquete de software más acompañamiento cerca de US$ 200 al mes. Con ese ingreso por cliente el equilibrio baja de 19 a 8 clientes. Hay que construirlo y probarlo con contratistas reales antes de darlo por bueno.
 
 ### 1. El precio, y por qué
 
@@ -591,28 +595,29 @@ Para una empresa de hasta 10 usuarios, entre los que publican precio: US$ 79 (IS
 
 #### Lo que la empresa necesita
 
-Resultados de la herramienta del CFO, con el costo fijo medio de US$ 7.432 al mes:
+Resultados de la herramienta del CFO, con costos fijos de US$ 1.351 al mes (el tope de S/ 5.000 que indicó el fundador):
 
 | Precio al mes | Lo que deja cada cliente | Clientes para cubrir los costos fijos |
 | ---: | ---: | ---: |
-| US$ 29 | US$ 24,13 | 308 |
-| US$ 59 | US$ 52,51 | 142 |
-| **US$ 79** | **US$ 71,43** | **105** |
-| US$ 99 | US$ 90,35 | 83 |
-| US$ 179 | US$ 166,03 | 45 |
-| US$ 200 | US$ 185,90 | 40 |
+| US$ 29 | US$ 24,13 | 56 |
+| US$ 39 | US$ 33,59 | 41 |
+| US$ 59 | US$ 52,51 | 26 |
+| **US$ 79** | **US$ 71,43** | **19** |
+| US$ 99 | US$ 90,35 | 15 |
+| US$ 179 | US$ 166,03 | 9 |
+| US$ 200 | US$ 185,90 | 8 |
 
 #### La decisión
 
-**Plan Inicial: US$ 79 al mes, sin cambios.** Está dentro del rango aceptable, iguala al competidor publicado más barato y nadie lo rechazó por caro. No lo baje: a US$ 59 harían falta 37 clientes más para cubrir los mismos costos y no se resuelve ninguna objeción. Subirlo a US$ 99 ahorraría 22 clientes de equilibrio, pero 11 de 20 ya lo sienten caro; es una prueba para hacer con compradores reales, no una decisión para tomar hoy.
+**Plan Inicial: US$ 79 al mes, sin cambios.** Está dentro del rango aceptable, iguala al competidor publicado más barato y nadie lo rechazó por caro. No lo baje: a US$ 59 harían falta 26 clientes en lugar de 19 para cubrir los mismos costos, el año pasaría de ganar US$ 931 a perder US$ 3.610 y no se resuelve ninguna objeción. Subirlo a US$ 99 bajaría el equilibrio a 15 clientes, pero 11 de 20 ya lo sienten caro; es una prueba para hacer con compradores reales, no una decisión para tomar hoy.
 
 ### 2. La escalera
 
 | Escalón | Qué es | Precio | Por qué subir |
 | --- | --- | --- | --- |
-| Entrada | SIG 360° para 3 usuarios y 1 sede | Hoy US$ 29. **Probar US$ 39** | US$ 29 queda por debajo de la línea de "demasiado barato" (4 de 20 desconfían) y exige 308 clientes para cubrir los costos |
+| Entrada | SIG 360° para 3 usuarios y 1 sede | Hoy US$ 29. **Probar US$ 39** | US$ 29 queda por debajo de la línea de "demasiado barato" (4 de 20 desconfían) y exige 56 clientes para cubrir los costos, casi el triple que el plan Inicial |
 | Bueno | SIG 360° Inicial, 10 usuarios y 1 sede | **US$ 79** | El plan de referencia |
-| Mejor | SIG 360° más acompañamiento: la empresa carga los documentos y registros del cliente y una persona con nombre lo acompaña hasta la auditoría | **Probar US$ 199 y US$ 249 al mes** | Responde a lo que pidieron 10 de 20 (que les carguen sus registros). Queda al nivel del servicio externo más barato (unos US$ 203 más IGV) y cumple la condición del directorio de US$ 200 por cliente |
+| Mejor | SIG 360° más acompañamiento: la empresa carga los documentos y registros del cliente y una persona con nombre lo acompaña hasta la auditoría | **Probar US$ 199 y US$ 249 al mes** | Responde a lo que pidieron 10 de 20 (que les carguen sus registros). Queda al nivel del servicio externo más barato (unos US$ 203 más IGV) y baja el equilibrio a 8 clientes |
 | Completo | Implementación ISO o del sistema de la Ley 29783 como proyecto cerrado | Por cotización, publicando un "desde" | El comprador ya paga entre S/ 12.000 y 35.000 por esto a un consultor (una sola fuente) |
 
 Dos arreglos en la escalera actual:
@@ -659,38 +664,48 @@ Son respuestas de compradores simulados. Sirven para investigar; no se pueden us
 
 **Cómo leer este documento.** La herramienta cuenta "unidades al día". Aquí una unidad es un cliente pagando un mes de SIG 360°, y el mes se trató como un solo "día". Donde la tabla en inglés dice *a day*, lea **clientes de pago en ese mes**. Los montos están en dólares y antes de IGV.
 
-**Qué se modeló y qué no.** Solo la suscripción de SIG 360° a US$ 79, cargando con todos los costos fijos de la empresa. Los ingresos de consultoría no están porque no se informaron. Por eso el resultado dice cuánto le falta al software para sostener la empresa por sí solo, no cuánto gana o pierde INNOVAQ en total.
+**Qué se modeló y qué no.** Solo la suscripción de SIG 360° a US$ 79, cargando con todos los costos fijos de la empresa. El fundador corrigió ese dato: los costos fijos no superan S/ 5.000 al mes, y se usó ese tope (US$ 1.351). Los ingresos de consultoría no están porque no se informaron; todo lo que la consultoría aporte mejora estos resultados.
 
-- **El margen.** Cada cliente deja US$ 71,43 al mes después de sus costos directos (90% del precio). El problema no está ahí. Está en que hacen falta **105 clientes de pago** para cubrir los costos fijos, y hoy hay entre 1 y 5.
-- **La línea que hay que vigilar: cuánto paga cada cliente.** A US$ 79 el equilibrio está en 105 clientes; a US$ 200 por cliente baja a 40. Ni siquiera triplicar el ritmo de ventas supuesto hace rentable el primer año a US$ 79 (pérdida de US$ 37.754). El segundo factor son los costos fijos: en el extremo bajo del rango que usted dio (S/ 15.000) el equilibrio es de 57 clientes; en el alto (S/ 40.000), de 152.
-- **Caja.** Con el ritmo de ventas supuesto, la línea de software pierde **US$ 72.041 en el primer año** con el costo fijo medio (entre US$ 31.505 y US$ 112.589 según el extremo del rango). Dicho de otro modo: la consultoría u otra fuente tiene que aportar en promedio **US$ 6.003 al mes (unos S/ 22.200)** durante ese año para que la empresa no pierda. Con el costo fijo bajo serían US$ 2.625 al mes; con el alto, US$ 9.382.
+- **El margen.** Cada cliente deja US$ 71,43 al mes después de sus costos directos (90% del precio). Con 43 clientes, el margen después de todos los costos es de 51%.
+- **El punto de equilibrio: 19 clientes de pago.** Hoy hay entre 1 y 5. Con costos tan bajos la meta es alcanzable; faltan unos 15 clientes.
+- **La línea que hay que vigilar: el ritmo al que entran clientes que pagan.** El primer año cierra con **US$ 931 de ganancia** solo si se cumple el ritmo supuesto (de 3 a 43 clientes en doce meses). Es un resultado frágil:
+  - con 10% menos de clientes, pierde US$ 783; con 20% menos, pierde US$ 2.497;
+  - si solo entra 1 cliente neto al mes, pierde US$ 8.926;
+  - si se queda en 3 clientes todo el año, pierde US$ 13.641.
+- **El panel no respalda ese ritmo.** De 20 compradores simulados, ninguno pagaría en el primer mes y 8 dijeron que a lo mucho abrirían la prueba gratuita, sin pagar. Hasta tener datos reales de cuántas pruebas terminan en pago, trate el ritmo supuesto como optimista.
+- **Caja.** Hacen falta **US$ 4.249** para cubrir los seis primeros meses, que son los que pierden, si el ritmo se cumple. Si los clientes no crecen, hasta US$ 13.641 en el año.
 - **Tres formas de mejorar el resultado**, con el número que cambia:
-  1. **Subir el ingreso por cliente a US$ 200** con un paquete de software más acompañamiento: el equilibrio baja de 105 a 40 clientes y la pérdida del primer año de US$ 72.041 a US$ 44.568, con el mismo número de clientes. Todavía no incluye lo que cuesta prestar ese servicio.
-  2. **Bajar costos fijos.** Cada S/ 1.000 menos al mes (US$ 270) son casi 4 clientes menos para llegar al equilibrio. En el extremo bajo del rango la pérdida del año es de US$ 31.505.
-  3. **Vender más rápido.** Con el doble de clientes cada mes la pérdida baja a US$ 54.898; con el triple, a US$ 37.754. Ayuda, pero menos que las dos anteriores.
-- **El ritmo de ventas es una estimación, y el panel no la respalda.** Se supuso que se parte de 3 clientes y que se suman entre 2 y 5 clientes netos al mes, hasta 43 en el mes 12. En el panel de 20 compradores simulados ninguno pagaría en el primer mes; 8 dijeron que a lo mucho abrirían la prueba gratuita, sin pagar. Hasta que haya datos reales de cuántas pruebas se convierten en pago, trate este ritmo como optimista.
-- **Las condiciones de dinero del directorio** ([`board.md`](board.md)): la 14 (US$ 200 o más por cliente) no se cumple hoy; la 15 (costo de conseguir un cliente recuperado en 12 meses) y la 10 (costo de la garantía) no se pueden calcular sin datos suyos.
+  1. **Subir el ingreso por cliente a US$ 200** con un paquete de software más acompañamiento: el equilibrio baja de 19 a 8 clientes y el año pasa de US$ 931 a US$ 28.404 con el mismo ritmo. Incluso entrando un solo cliente neto al mes, el año cierra en US$ 2.750. Estas cifras todavía no descuentan lo que cuesta prestar el servicio.
+  2. **No apoyarse en el plan de US$ 29.** A ese precio el equilibrio sube a 56 clientes y el año pierde US$ 10.421 con el mismo ritmo.
+  3. **Probar US$ 99 en el plan Inicial:** el equilibrio baja a 15 clientes y el año sube a US$ 5.472. Hay que probarlo con compradores reales, porque 11 de 20 del panel ya lo sienten caro.
+- **Las condiciones de dinero del directorio** están en [`board.md`](board.md), con su estado después de estos números.
 
-**Lo que falta para que estos números sean reales** (detalle en [`cfo-sources.md`](cfo-sources.md)): la cifra exacta de costos fijos, cuántos de los clientes actuales pagan SIG 360° y cuánto, los ingresos mensuales de consultoría, la factura real de nube y la comisión real de cobro.
+**Una pregunta que cambia la lectura.** Si los S/ 5.000 no incluyen un sueldo para usted, la ganancia de este modelo es lo que le queda por su trabajo, no un excedente.
+
+**Lo que falta para que estos números sean reales** (detalle en [`cfo-sources.md`](cfo-sources.md)): el desglose de los costos fijos, cuántos de los clientes actuales pagan SIG 360° y cuánto, los ingresos mensuales de consultoría, la factura real de nube y la comisión real de cobro.
 
 Esto no es asesoría financiera, tributaria ni legal. Un contador debe revisar la estructura, la planilla y los impuestos antes de mover dinero.
 
 ### Escenarios corridos con la herramienta
 
-| Escenario | Deja cada cliente | Costos fijos al mes | Clientes para el equilibrio | Resultado del año 1 |
+| Escenario | Deja cada cliente | Clientes para el equilibrio | Resultado del año 1 | Caja necesaria |
 | --- | ---: | ---: | ---: | ---: |
-| **Base: US$ 79, costo fijo medio** | US$ 71,43 | US$ 7.432 | **105** | **-US$ 72.041** |
-| Costo fijo bajo (S/ 15.000) | US$ 71,43 | US$ 4.054 | 57 | -US$ 31.505 |
-| Costo fijo alto (S/ 40.000) | US$ 71,43 | US$ 10.811 | 152 | -US$ 112.589 |
-| Precio US$ 59 | US$ 52,51 | US$ 7.432 | 142 | -US$ 76.582 |
-| Precio US$ 99 | US$ 90,35 | US$ 7.432 | 83 | -US$ 67.500 |
-| US$ 200 por cliente | US$ 185,90 | US$ 7.432 | 40 | -US$ 44.568 |
-| US$ 200 por cliente, costo fijo bajo | US$ 185,90 | US$ 4.054 | 22 | -US$ 4.032 |
-| US$ 200 por cliente, costo fijo alto | US$ 185,90 | US$ 10.811 | 59 | -US$ 85.116 |
-| Base con el doble de clientes cada mes | US$ 71,43 | US$ 7.432 | 105 | -US$ 54.898 |
-| Base con el triple de clientes cada mes | US$ 71,43 | US$ 7.432 | 105 | -US$ 37.754 |
+| **Base: US$ 79, costos fijos de US$ 1.351, ritmo supuesto** | US$ 71,43 | **19** | **US$ 931** | **US$ 4.249** |
+| 10% menos de clientes | US$ 71,43 | 19 | -US$ 783 | US$ 4.700 |
+| 20% menos de clientes | US$ 71,43 | 19 | -US$ 2.497 | US$ 5.228 |
+| La mitad de clientes | US$ 71,43 | 19 | -US$ 7.640 | US$ 7.831 |
+| El doble de clientes | US$ 71,43 | 19 | US$ 18.074 | US$ 1.910 |
+| Solo 1 cliente neto más al mes (de 3 a 14) | US$ 71,43 | 19 | -US$ 8.926 | US$ 8.926 |
+| Sin crecer: 3 clientes todo el año | US$ 71,43 | 19 | -US$ 13.641 | US$ 13.641 |
+| Precio US$ 29 | US$ 24,13 | 56 | -US$ 10.421 | US$ 10.421 |
+| Precio US$ 39 | US$ 33,59 | 41 | -US$ 8.150 | US$ 8.244 |
+| Precio US$ 59 | US$ 52,51 | 26 | -US$ 3.610 | US$ 5.662 |
+| Precio US$ 99 | US$ 90,35 | 15 | US$ 5.472 | US$ 3.322 |
+| US$ 200 por cliente | US$ 185,90 | 8 | US$ 28.404 | US$ 1.264 |
+| US$ 200 por cliente, solo 1 cliente neto más al mes | US$ 185,90 | 8 | US$ 2.750 | US$ 2.108 |
+| Costos fijos de S/ 3.000 (US$ 811) | US$ 71,43 | 12 | US$ 7.411 | US$ 1.458 |
 
-En los escenarios con otro precio la comisión de cobro se recalculó con la misma fórmula (5,4% más US$ 0,30).
+En los escenarios con otro precio la comisión de cobro se recalculó con la misma fórmula (5,4% más US$ 0,30). Por eso difieren un poco de la tabla *What if* de abajo, que cambia el precio sin tocar los costos.
 
 ### El informe de la herramienta (escenario base)
 
@@ -707,46 +722,43 @@ Every number below comes from the input file. Nothing is looked up or guessed.
 
 #### The margin that matters
 
-Fixed costs: $7,432 a month (Costos fijos de toda la empresa (punto medio del rango del fundador: S/ 15.000 a 40.000, a S/ 3,70) $7,432).
+Fixed costs: $1,351 a month (Costos fijos de toda la empresa (tope que dio el fundador: S/ 5.000 al mes, a S/ 3,70) $1,351).
 
-- **Break-even: 105 cliente-mess a day.** Below that you lose money every month.
-- **Profit margin at your plan** (43 a day): **-128%** of every sale, after every cost.
+- **Break-even: 19 cliente-mess a day.** Below that you lose money every month.
+- **Profit margin at your plan** (43 a day): **51%** of every sale, after every cost.
 
 #### Year 1, month by month
 
 | month | cliente-mess a day | revenue | profit | cumulative (after $0 startup) |
 | ---: | ---: | ---: | ---: | ---: |
-| 1 | 3 | $237 | -$7,218 | -$7,218 |
-| 2 | 5 | $395 | -$7,075 | -$14,293 |
-| 3 | 7 | $553 | -$6,932 | -$21,225 |
-| 4 | 10 | $790 | -$6,718 | -$27,942 |
-| 5 | 13 | $1,027 | -$6,503 | -$34,446 |
-| 6 | 16 | $1,264 | -$6,289 | -$40,735 |
-| 7 | 20 | $1,580 | -$6,003 | -$46,738 |
-| 8 | 24 | $1,896 | -$5,718 | -$52,456 |
-| 9 | 28 | $2,212 | -$5,432 | -$57,888 |
-| 10 | 33 | $2,607 | -$5,075 | -$62,963 |
-| 11 | 38 | $3,002 | -$4,718 | -$67,680 |
-| 12 | 43 | $3,397 | -$4,361 | -$72,041 |
+| 1 | 3 | $237 | -$1,137 | -$1,137 |
+| 2 | 5 | $395 | -$994 | -$2,131 |
+| 3 | 7 | $553 | -$851 | -$2,982 |
+| 4 | 10 | $790 | -$637 | -$3,618 |
+| 5 | 13 | $1,027 | -$422 | -$4,041 |
+| 6 | 16 | $1,264 | -$208 | -$4,249 |
+| 7 | 20 | $1,580 | $78 | -$4,171 |
+| 8 | 24 | $1,896 | $363 | -$3,808 |
+| 9 | 28 | $2,212 | $649 | -$3,159 |
+| 10 | 33 | $2,607 | $1,006 | -$2,153 |
+| 11 | 38 | $3,002 | $1,363 | -$789 |
+| 12 | 43 | $3,397 | $1,720 | $931 |
 
-- **Year 1 operating profit: -$72,041** on $18,960 of revenue.
-- After the $0 startup spend: -$72,041.
-- Startup money earned back: not within year 1.
-- Cash you need before it pays for itself: **$72,041**.
+- **Year 1 operating profit: $931** on $18,960 of revenue.
+- After the $0 startup spend: $931.
+- Startup money earned back: month 12.
+- Cash you need before it pays for itself: **$4,249**.
 
 #### What if
 
 | scenario | margin at plan | break-even a day | year 1 profit |
 | --- | ---: | ---: | ---: |
-| Base plan | -128% | 105 | -$72,041 |
-| Price -10% | -154% | 117 | -$73,937 |
-| Volume -20% | -183% | 105 | -$75,469 |
-| Unit costs +15% | -130% | 106 | -$72,313 |
+| Base plan | 51% | 19 | $931 |
+| Price -10% | 45% | 22 | -$965 |
+| Volume -20% | 41% | 19 | -$2,497 |
+| Unit costs +15% | 49% | 20 | $659 |
 
-#### Red flags
-
-- Year 1 loses money on operations (-$72,041).
-- The startup spend is not earned back within year 1.
+No red flags in these numbers. They are only as good as the inputs: check every cost against a real quote.
 
 ## Not done yet
 

@@ -1,5 +1,7 @@
 # Lo que dijo el directorio
 
+> **En revisión.** Este resumen se escribió cuando el informe decía, por error, que los costos fijos eran de S/ 15.000 a 40.000 al mes. El fundador corrigió el dato: no superan S/ 5.000. El directorio se está volviendo a reunir con la cifra correcta; las cifras de equilibrio de esta versión (105 clientes, etc.) ya no valen. Los números vigentes están en [`cfo.md`](cfo.md).
+
 Los tres miembros aplican marcos publicados (la lente de la Oferta, la del Monopolio y la del Producto). No hablan en nombre de los autores de esos marcos ni los citan. Memos completos: [`board/offers.md`](board/offers.md), [`board/monopoly.md`](board/monopoly.md), [`board/product.md`](board/product.md). Lo que leyeron: [`board/brief.md`](board/brief.md).
 
 ## 1. El voto

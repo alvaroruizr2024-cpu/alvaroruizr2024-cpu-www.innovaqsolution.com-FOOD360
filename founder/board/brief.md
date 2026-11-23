@@ -40,7 +40,7 @@ Fuente de todo lo que sigue: el sitio público www.innovaqsolution.com (páginas
 
 - **Oferta que se evalúa primero:** SIG 360° (software de sistema integrado de gestión, desde US$ 29 al mes) junto con la consultoría ISO y de seguridad y salud en el trabajo (Ley 29783), para empresas y contratistas de minería, construcción y energía en Perú. Los otros diez productos existen en el catálogo pero no son el foco de esta evaluación.
 - **Clientes de pago hoy:** entre 1 y 5 (el fundador no dijo cuántos son de software por suscripción y cuántos de consultoría).
-- **Costos fijos de la empresa:** entre S/ 15.000 y S/ 40.000 al mes (aprox. US$ 4.050 a US$ 10.800 a S/ 3,70 por dólar), contando sueldos, nube y herramientas, oficina y contador. Corresponde a un equipo pequeño estable.
+- **Costos fijos de la empresa:** no superan S/ 5.000 al mes (aprox. US$ 1.351 a S/ 3,70 por dólar), contando sueldos, nube y herramientas, oficina y contador. Dato corregido por el fundador; una versión anterior de este informe decía, por error, entre S/ 15.000 y S/ 40.000.
 
 ## Lo que nadie ha informado todavía
 

@@ -1,6 +1,6 @@
 # INNOVAQ Solutions · SIG 360° en una página
 
-**Veredicto del plan: todavía no.** Cada cliente deja margen, pero el primer año pierde y ningún comprador simulado paga con la oferta actual.
+**Veredicto del plan: todavía no.** Los números cierran por poco, pero ningún comprador simulado paga con la oferta actual.
 
 ## El problema
 
@@ -20,25 +20,25 @@ SIG 360°: software en la nube para ISO 9001, 14001, 45001 y 37001 y los registr
 | --- | ---: |
 | Precio | US$ 79 por cliente al mes |
 | Lo que deja cada cliente | US$ 71,43 (90%) |
-| Costos fijos de la empresa | US$ 7.432 al mes (punto medio de S/ 15.000 a 40.000) |
-| Clientes para cubrir los costos fijos | 105 |
+| Costos fijos de la empresa | US$ 1.351 al mes (tope de S/ 5.000 indicado por el fundador) |
+| Clientes para cubrir los costos fijos | 19 |
 | Clientes de pago hoy | entre 1 y 5 |
-| Resultado del primer año (línea de software sola) | pérdida de US$ 72.041 |
-| Caja necesaria antes de que se pague solo | US$ 72.041 |
+| Resultado del primer año (línea de software sola) | ganancia de US$ 931 |
+| Caja necesaria antes de que se pague solo | US$ 4.249 |
 | Panel de compradores | 0 compran · 20 no compran |
 
-Los costos fijos son un rango dicho por el fundador; el ritmo de ventas y dos costos directos son estimaciones. Los ingresos de consultoría no están incluidos.
+El resultado del año depende de un ritmo de ventas estimado (de 3 a 43 clientes en doce meses): con 10% menos de clientes el año pierde US$ 783. Dos costos directos también son estimaciones. Los ingresos de consultoría no están incluidos.
 
 ## La evidencia
 
 - **Panel simulado (20 compradores):** ninguno pagaría hoy. Motivos: costumbre (7), confianza (7), comodidad de uso (4), no lo necesitan ahora (2). Ninguno por precio. El rango de precio aceptable va de US$ 29,70 a US$ 110,90.
 - **Competidores:** ninguno de los 7 verificados junta cuatro normas ISO, Ley 29783, precio público de US$ 100 o menos y consultoría propia. El hueco es de combinación, no de precio, y no está probado con compradores. Los datos vienen de resultados de búsqueda.
-- **Directorio:** 3 votos de "financiar si", puntaje medio de 4,0 sobre 10.
+- **Directorio:** en revisión. El directorio se está volviendo a reunir con el costo fijo corregido; el resultado se añade al terminar.
 - **Prueba con compradores reales:** ninguna todavía.
 
 ## Para qué es el dinero
 
-No se ha definido un pedido de dinero. Con los números de hoy, haría falta cubrir hasta US$ 72.041 de pérdida de la línea de software en el primer año, salvo que la consultoría aporte unos US$ 6.003 al mes.
+No se ha definido un pedido de dinero. Con los números de hoy hacen falta US$ 4.249 para cubrir los seis primeros meses, y hasta US$ 13.641 en el año si los clientes no crecen.
 
 ## Lo que se pide
 
