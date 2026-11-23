@@ -61,3 +61,24 @@ These are simulated buyers, not customers. Use this to find objections and weak 
 - Que la minera o la empresa homologadora me exija o me puntúe llevar los registros en una plataforma, o que ustedes se comprometan por escrito y a precio cerrado a dejarme los registros que me faltan listos antes de la auditoría.
 
 20 buyers gave all four price answers. Run founder-pricing's van_westendorp.py on the answers folder.
+
+## Lectura del moderador (conteo manual de las 20 respuestas)
+
+La tabla de arriba la genera la herramienta. Este conteo se hizo leyendo cada respuesta; un mismo comprador puede aparecer en varias filas.
+
+| Lo que pide o le preocupa | Compradores | Quiénes |
+| --- | ---: | --- |
+| Referencias o un caso real de un contratista como él, con nombre | 10 | P001, P003, P004, P005, P007, P008, P010, P016, P018, P020 |
+| Que la empresa le cargue o migre sus documentos y registros | 10 | P003, P006, P007, P008, P009, P012, P013, P014, P017, P019 |
+| Saber si su cliente minero o el inspector aceptan o exigen lo que sale del sistema | 9 | P006, P007, P008, P009, P010, P012, P014, P017, P019 |
+| Abriría la prueba gratuita, pero sin pagar | 8 | P002, P005, P007, P008, P013, P014, P018, P020 |
+| 10 usuarios y 1 sede no le alcanzan, o teme el salto al plan de US$ 179 | 7 | P003, P004, P007, P009, P011, P013, P015 |
+| Que funcione sin señal en campo | 5 | P003, P011, P015, P016, P017 |
+| Quién responde, y en cuánto tiempo, si falla el día de la auditoría | 5 | P001, P004, P014, P018, P020 |
+| Que su propio consultor lo use o lo recomiende | 4 | P001, P004, P006, P009 |
+| Poder exportar todo a Excel y PDF cuando quiera | 3 | P002, P005, P020 |
+| Precio congelado por contrato dos o tres años | 2 | P002, P005 |
+
+**Límites, dichos una vez.** Son compradores simulados. Sirven para encontrar objeciones, segmentos y palabras que no se habían pensado, y sirven mal para predecir ventas reales. Con solo 20 respuestas, cada fila de las tablas por grupo es una muestra pequeña. Antes de decidir nada grande, confírmelo con personas reales: una lista de espera, una preventa o tres pilotos pagados. Las frases del panel no se pueden usar como testimonios de clientes.
+
+**Perfil de cliente usado.** Lo armó el moderador a partir del sitio y del mapa de competidores, sin datos reales de clientes de INNOVAQ: [`../customer.json`](../customer.json). Si el perfil está mal, el panel está mal; corríjalo y se vuelve a repartir con la misma semilla.
