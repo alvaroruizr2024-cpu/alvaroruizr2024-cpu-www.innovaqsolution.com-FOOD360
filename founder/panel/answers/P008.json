@@ -1,0 +1,13 @@
+{
+  "id": "P008",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "No conozco a INNOVAQ ni veo un solo contratista minero como yo que haya pasado su homologación con esto, y a tres semanas de la auditoría no voy a apostar por un software que todavía tengo que aprender. A lo mucho abro la prueba gratis para sacar plantillas, pero pagar no pago.",
+  "objection": "Un software no me llena los registros que me faltan: eso lo tengo que hacer yo o un consultor, y nadie me garantiza que el auditor del cliente minero acepte lo que salga de este sistema. Además es una mensualidad en dólares para siempre, cuando yo solo gasto en esto cuando el cliente me lo exige.",
+  "would_change_my_mind": "Que me muestren dos o tres contratistas de mi tamaño que aprobaron la homologación de una minera usando SIG 360°, con nombre y teléfono para llamarlos, y que alguien de ellos me deje los registros faltantes cargados antes de mi auditoría.",
+  "price_too_cheap": 10,
+  "price_cheap": 25,
+  "price_expensive": 50,
+  "price_too_expensive": 90
+}

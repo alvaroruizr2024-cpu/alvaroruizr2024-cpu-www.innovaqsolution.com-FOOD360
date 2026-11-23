@@ -1,0 +1,13 @@
+{
+  "id": "P003",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "convenience",
+  "reason": "Paso medio mes en obra o en la unidad minera casi sin señal, y un software en la nube que no dice si funciona sin conexión no me sirve justo donde lleno los IPERC y los registros. Además migrar todo lo que tengo en Excel y capacitar a mi gente me tomaría meses, y la compra no la decido yo: el dueño pide al menos dos cotizaciones.",
+  "objection": "Pasar todos mis registros y capacitar a los supervisores me va a tomar meses, y en mina sin internet no sé si podré registrar nada. Tampoco sé si el plan de 10 usuarios y 1 sede nos alcanza; con varias obras tendría que ir al de US$ 179 y eso ya es otra conversación con gerencia.",
+  "would_change_my_mind": "Que funcione sin conexión en el celular y sincronice después, y que ellos mismos me carguen mis registros y formatos actuales dentro de la prueba de 30 días, con un par de contratistas mineras de referencia que yo pueda llamar para sustentarlo ante el dueño.",
+  "price_too_cheap": 15,
+  "price_cheap": 40,
+  "price_expensive": 110,
+  "price_too_expensive": 180
+}

@@ -1,0 +1,15 @@
+{
+  "business": "INNOVAQ Solutions · línea de software SIG 360° (una unidad = un cliente pagando un mes; \"a day\" en las tablas significa \"al mes\")",
+  "unit": "cliente-mes",
+  "price": 79,
+  "variable": [
+    {"label": "Comisión de cobro PayPal (estimación: 5,4% + US$ 0,30)", "cost": 4.57},
+    {"label": "Nube y base de datos por cliente (estimación)", "cost": 3.00}
+  ],
+  "fixed_monthly": [
+    {"label": "Costos fijos de toda la empresa (punto medio del rango del fundador: S/ 15.000 a 40.000, a S/ 3,70)", "cost": 7432}
+  ],
+  "startup": [],
+  "days_per_month": 1,
+  "ramp_per_day": [3, 5, 7, 10, 13, 16, 20, 24, 28, 33, 38, 43]
+}

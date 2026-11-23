@@ -1,0 +1,13 @@
+{
+  "id": "P007",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Ya tenemos un software de seguridad contratado y además la minera nos exige cargar todo en su plataforma; cambiarme significa migrar años de registros de 250 trabajadores y eso no lo hago por un aviso que acabo de ver. Como mucho abriría la prueba gratis para mirar, pero no pagaría el primer mes.",
+  "objection": "No sé si de verdad cubre lo que me pide SUNAFIL y lo que me exige la minera: el aviso lista módulos y plantillas, pero no dice si los registros salen en el formato que aceptan en una inspección ni quién más de mi tamaño lo usa. Además, con 10 usuarios y 1 sede el plan de US$ 79 no me alcanza; tendría que ir al de US$ 179.",
+  "would_change_my_mind": "Que me demuestren con un caso real de una contratista minera de mi tamaño que pasó una inspección de SUNAFIL y la homologación de la minera usando esto, y que ellos se encarguen de migrar mis datos del sistema actual sin costo.",
+  "price_too_cheap": 30,
+  "price_cheap": 60,
+  "price_expensive": 150,
+  "price_too_expensive": 250
+}

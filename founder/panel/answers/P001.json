@@ -1,0 +1,13 @@
+{
+  "id": "P001",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Ya le pago a un consultor externo de SSOMA que me arma los documentos y las auditorías me los aprueban tal como están; no voy a mover algo que funciona por un software que tendría que alimentar mi equipo de menos de cinco personas. El precio no es el problema, es el cambio.",
+  "objection": "Si el sistema falla o no puedo sacar un registro el día de la auditoría, ¿quién me responde? El anuncio dice soporte en español, pero no dice en cuánto tiempo responden ni qué pasa con mis documentos si la plataforma se cae, y a esta empresa no la conozco.",
+  "would_change_my_mind": "Que mi propio consultor de SSOMA lo use para llevar nuestros documentos y me lo recomiende él, con el nombre de una empresa de mi tamaño que ya pasó una auditoría trabajando con el sistema.",
+  "price_too_cheap": 30,
+  "price_cheap": 60,
+  "price_expensive": 180,
+  "price_too_expensive": 350
+}

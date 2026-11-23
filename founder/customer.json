@@ -1,0 +1,36 @@
+{
+  "business": "INNOVAQ Solutions: SIG 360° (software de sistema integrado de gestión) más consultoría ISO y de seguridad y salud en el trabajo",
+  "target": "Personas que deciden o recomiendan cómo su empresa lleva las normas ISO y la seguridad y salud en el trabajo (Ley 29783) en empresas y contratistas de minería, construcción y energía en Perú, de 10 a 300 trabajadores. Usted decide con el dinero de su empresa, no con el suyo",
+  "where": "Perú (Lima, La Libertad, Arequipa, Cajamarca, Áncash)",
+  "age": [28, 58],
+  "segments": [
+    {"name": "Gerente general o dueño de una contratista pequeña (10 a 50 trabajadores)", "share": 0.45, "income": [14000, 40000]},
+    {"name": "Jefe o supervisor SSOMA o de calidad en una contratista mediana (50 a 200 trabajadores)", "share": 0.35, "income": [12000, 30000]},
+    {"name": "Gerente de operaciones o de administración en una empresa mediana (200 a 300 trabajadores)", "share": 0.20, "income": [30000, 70000]}
+  ],
+  "behaviours": [
+    {"name": "Todo en Excel y carpetas", "share": 0.25, "how": "Lleva los registros de seguridad y los documentos ISO en hojas de cálculo y carpetas compartidas; le funciona hasta que llega una auditoría."},
+    {"name": "Delega en un consultor externo", "share": 0.20, "how": "Paga a un consultor o a un servicio externo de SSOMA que le arma los documentos, y no quiere cambiar lo que ya le aprueban."},
+    {"name": "Compra solo cuando el cliente lo exige", "share": 0.20, "how": "Gasta en cumplimiento cuando una minera, una constructora grande o SUNAFIL se lo pide con fecha."},
+    {"name": "Necesita aprobación de gerencia", "share": 0.15, "how": "Cualquier suscripción nueva la aprueba el dueño o finanzas, y suele comparar al menos dos cotizaciones."},
+    {"name": "Ya usa otro software", "share": 0.10, "how": "Tiene contratado un software de seguridad o de ISO, o usa el que le impone su cliente; cambiar significa migrar datos."},
+    {"name": "Prueba todo lo nuevo", "share": 0.10, "how": "Abre pruebas gratuitas de herramientas nuevas y las descarta rápido si no le ahorran tiempo en la primera semana."}
+  ],
+  "objections": [
+    "No conozco a esta empresa: no veo clientes ni casos de contratistas como yo",
+    "Ya lo llevo en Excel con mi consultor y me aprueban las auditorías",
+    "Si el sistema falla el día de la auditoría, ¿quién me responde?",
+    "¿De verdad cubre lo que me piden SUNAFIL y la minera?",
+    "Mis supervisores están en campo sin señal; con pocos usuarios no me alcanza",
+    "Pasar todos mis registros y capacitar a mi gente me va a tomar meses",
+    "Hoy es barato, ¿y si el próximo año suben el precio o la empresa desaparece?",
+    "El problema no es el precio al mes, es el tiempo que toma implementarlo"
+  ],
+  "habits": [
+    "tiene en tres semanas una auditoría de homologación de un cliente minero y le faltan registros",
+    "pasa la mitad del mes en obra o en la unidad minera, con mala conexión",
+    "lleva la administración desde una oficina pequeña con un equipo de menos de cinco personas",
+    "hace poco recibió una observación de SUNAFIL, o conoce a un colega al que multaron",
+    "arma los expedientes de licitación de noche, copiando formatos de trabajos anteriores"
+  ]
+}
