@@ -1,0 +1,13 @@
+{
+  "id": "P005",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "El precio no es el problema, S/ 292 al mes los pago si me evita otra observación de SUNAFIL. Pero no voy a meter todos mis registros de seguridad en el sistema de una empresa que no conozco, sin saber si en dos años sigue existiendo o me duplica la tarifa; a lo mucho abro la prueba gratis y sigo con mi Excel.",
+  "objection": "Hoy es barato, ¿y si el próximo año suben el precio o la empresa desaparece? Mis registros de la Ley 29783 tengo que guardarlos por años y no puedo quedarme sin ellos justo cuando llega la inspección.",
+  "would_change_my_mind": "Un contrato con el precio congelado por lo menos dos o tres años y la garantía por escrito de que puedo descargar todos mis registros en Excel y PDF cuando quiera, más dos o tres contratistas de mi rubro que ya lo usen y a quienes pueda llamar.",
+  "price_too_cheap": 20,
+  "price_cheap": 50,
+  "price_expensive": 100,
+  "price_too_expensive": 150
+}

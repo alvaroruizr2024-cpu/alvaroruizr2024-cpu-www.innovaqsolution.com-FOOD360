@@ -1,0 +1,13 @@
+{
+  "id": "P015",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "convenience",
+  "reason": "Mis supervisores llenan IPERC, ATS e inspecciones en campo, sin señal, y aquí nadie me dice que funcione sin internet; además con 10 usuarios no cubro ni a la mitad de mi gente y el plan de US$ 179 no lo apruebo yo, lo aprueba el dueño con dos cotizaciones. A lo mucho pruebo los 30 días gratis, pero comprar este mes, no.",
+  "objection": "Que termine pagando un software en la nube que solo usamos dos personas en oficina, mientras en obra siguen con papel y Excel porque no hay señal, y que el salto de 10 a 50 usuarios me obligue a pagar más del doble.",
+  "would_change_my_mind": "Que en la prueba me demuestren que se registra en campo sin señal desde el celular y sincroniza después, con usuarios suficientes para mis supervisores (unos 25 a 30) en una cotización formal que pueda llevar a gerencia junto a otra.",
+  "price_too_cheap": 25,
+  "price_cheap": 60,
+  "price_expensive": 150,
+  "price_too_expensive": 250
+}

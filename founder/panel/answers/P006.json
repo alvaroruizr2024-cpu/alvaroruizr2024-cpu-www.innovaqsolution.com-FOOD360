@@ -1,0 +1,13 @@
+{
+  "id": "P006",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Yo ya le pago a un consultor de SSOMA que me arma el IPERC y los registros, y eso es lo que me vienen aprobando. US$ 79 al mes no me asusta, pero no voy a pagar un software que encima alguien de mi empresa tiene que aprender y llenar, justo cuando estoy ocupada levantando la observación de SUNAFIL.",
+  "objection": "El problema no es el precio al mes, es el tiempo que toma implementarlo: quién carga todos mis documentos al sistema, cuántas semanas demora, y si lo que salga de ahí me lo va a aceptar el inspector y mi cliente igual que lo que ya tengo. Además no sé nada de esta empresa ni quién más la usa.",
+  "would_change_my_mind": "Que mi consultor me diga que él trabaja con esa herramienta, o que ustedes mismos me migren los documentos que ya tengo y me dejen todo listo para una inspección de SUNAFIL en un plazo fijo, por escrito, sin que mi gente tenga que cargar nada.",
+  "price_too_cheap": 15,
+  "price_cheap": 40,
+  "price_expensive": 90,
+  "price_too_expensive": 150
+}

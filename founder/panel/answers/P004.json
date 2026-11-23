@@ -1,0 +1,13 @@
+{
+  "id": "P004",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "No conozco a INNOVAQ y no veo ni un cliente ni un caso de una contratista de mi tamaño que haya pasado una inspección de SUNAFIL con este sistema. Además ya le pago a un consultor de SSOMA que me arma los documentos y me los aprueban; no voy a mover eso justo después de una observación.",
+  "objection": "Si mañana viene SUNAFIL o me audita el cliente minero, ¿quién me responde? Mi consultor firma y da la cara; un software de una empresa de Trujillo que no conozco, con 10 usuarios y 1 sede para una empresa de más de 200 trabajadores, no me da esa seguridad. Y alguien tendría que cargar todo de nuevo, y ese alguien no voy a ser yo.",
+  "would_change_my_mind": "Que mi propio consultor de SSOMA me lo recomiende y lo use él para llevar mis registros, o ver dos o tres contratistas de minería o construcción de 200 a 300 trabajadores, con nombre y teléfono, que me confirmen que pasaron una fiscalización de SUNAFIL usando el sistema.",
+  "price_too_cheap": 30,
+  "price_cheap": 70,
+  "price_expensive": 180,
+  "price_too_expensive": 350
+}

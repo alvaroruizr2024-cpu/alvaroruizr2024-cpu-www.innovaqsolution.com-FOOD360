@@ -1,0 +1,13 @@
+{
+  "id": "P009",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Ya lo llevo en Excel con mi consultor y las auditorías me las aprueban; no voy a pedirle a gerencia un gasto mensual en dólares para cambiar algo que hoy funciona. Además mi empresa tiene más de 50 trabajadores y varios frentes de obra, así que el plan de US$ 79 con 10 usuarios y 1 sede me queda corto y tendría que ir al de US$ 179.",
+  "objection": "Migrar todo: mis IPERC, mis registros de la Ley 29783 y mis formatos ya están armados y aprobados con el formato de mi consultor. Si los paso a un software y en la próxima auditoría o fiscalización de SUNAFIL me observan algo, la responsable soy yo. Y mi consultor no va a querer trabajar en una herramienta de otra consultora que además le compite.",
+  "would_change_my_mind": "Que mi propio consultor me lo recomiende y trabaje ahí, o que el cliente minero o un auditor me observe el control documental en Excel y me exija trazabilidad; y que me migren ellos mis documentos actuales sin costo durante la prueba.",
+  "price_too_cheap": 15,
+  "price_cheap": 35,
+  "price_expensive": 90,
+  "price_too_expensive": 150
+}

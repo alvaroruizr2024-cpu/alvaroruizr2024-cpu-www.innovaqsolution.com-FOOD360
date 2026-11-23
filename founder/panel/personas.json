@@ -1,0 +1,222 @@
+[
+ {
+  "id": "P001",
+  "name": "Omar",
+  "age": 28,
+  "segment": "Gerente de operaciones o de administración en una empresa mediana (200 a 300 trabajadores)",
+  "income": 49000,
+  "behaviour": "Delega en un consultor externo",
+  "behaviour_how": "Paga a un consultor o a un servicio externo de SSOMA que le arma los documentos, y no quiere cambiar lo que ya le aprueban.",
+  "objection": "Si el sistema falla el día de la auditoría, ¿quién me responde?",
+  "habit": "lleva la administración desde una oficina pequeña con un equipo de menos de cinco personas"
+ },
+ {
+  "id": "P002",
+  "name": "Raj",
+  "age": 37,
+  "segment": "Jefe o supervisor SSOMA o de calidad en una contratista mediana (50 a 200 trabajadores)",
+  "income": 12000,
+  "behaviour": "Prueba todo lo nuevo",
+  "behaviour_how": "Abre pruebas gratuitas de herramientas nuevas y las descarta rápido si no le ahorran tiempo en la primera semana.",
+  "objection": "Hoy es barato, ¿y si el próximo año suben el precio o la empresa desaparece?",
+  "habit": "arma los expedientes de licitación de noche, copiando formatos de trabajos anteriores"
+ },
+ {
+  "id": "P003",
+  "name": "Emil",
+  "age": 39,
+  "segment": "Jefe o supervisor SSOMA o de calidad en una contratista mediana (50 a 200 trabajadores)",
+  "income": 23000,
+  "behaviour": "Necesita aprobación de gerencia",
+  "behaviour_how": "Cualquier suscripción nueva la aprueba el dueño o finanzas, y suele comparar al menos dos cotizaciones.",
+  "objection": "Pasar todos mis registros y capacitar a mi gente me va a tomar meses",
+  "habit": "pasa la mitad del mes en obra o en la unidad minera, con mala conexión"
+ },
+ {
+  "id": "P004",
+  "name": "Owen",
+  "age": 50,
+  "segment": "Gerente de operaciones o de administración en una empresa mediana (200 a 300 trabajadores)",
+  "income": 64000,
+  "behaviour": "Delega en un consultor externo",
+  "behaviour_how": "Paga a un consultor o a un servicio externo de SSOMA que le arma los documentos, y no quiere cambiar lo que ya le aprueban.",
+  "objection": "No conozco a esta empresa: no veo clientes ni casos de contratistas como yo",
+  "habit": "hace poco recibió una observación de SUNAFIL, o conoce a un colega al que multaron"
+ },
+ {
+  "id": "P005",
+  "name": "Sana",
+  "age": 56,
+  "segment": "Gerente general o dueño de una contratista pequeña (10 a 50 trabajadores)",
+  "income": 37000,
+  "behaviour": "Todo en Excel y carpetas",
+  "behaviour_how": "Lleva los registros de seguridad y los documentos ISO en hojas de cálculo y carpetas compartidas; le funciona hasta que llega una auditoría.",
+  "objection": "Hoy es barato, ¿y si el próximo año suben el precio o la empresa desaparece?",
+  "habit": "hace poco recibió una observación de SUNAFIL, o conoce a un colega al que multaron"
+ },
+ {
+  "id": "P006",
+  "name": "Maya",
+  "age": 40,
+  "segment": "Gerente general o dueño de una contratista pequeña (10 a 50 trabajadores)",
+  "income": 24000,
+  "behaviour": "Delega en un consultor externo",
+  "behaviour_how": "Paga a un consultor o a un servicio externo de SSOMA que le arma los documentos, y no quiere cambiar lo que ya le aprueban.",
+  "objection": "El problema no es el precio al mes, es el tiempo que toma implementarlo",
+  "habit": "hace poco recibió una observación de SUNAFIL, o conoce a un colega al que multaron"
+ },
+ {
+  "id": "P007",
+  "name": "Selin",
+  "age": 29,
+  "segment": "Gerente de operaciones o de administración en una empresa mediana (200 a 300 trabajadores)",
+  "income": 38000,
+  "behaviour": "Ya usa otro software",
+  "behaviour_how": "Tiene contratado un software de seguridad o de ISO, o usa el que le impone su cliente; cambiar significa migrar datos.",
+  "objection": "¿De verdad cubre lo que me piden SUNAFIL y la minera?",
+  "habit": "hace poco recibió una observación de SUNAFIL, o conoce a un colega al que multaron"
+ },
+ {
+  "id": "P008",
+  "name": "Ruby",
+  "age": 33,
+  "segment": "Gerente general o dueño de una contratista pequeña (10 a 50 trabajadores)",
+  "income": 17000,
+  "behaviour": "Compra solo cuando el cliente lo exige",
+  "behaviour_how": "Gasta en cumplimiento cuando una minera, una constructora grande o SUNAFIL se lo pide con fecha.",
+  "objection": "No conozco a esta empresa: no veo clientes ni casos de contratistas como yo",
+  "habit": "tiene en tres semanas una auditoría de homologación de un cliente minero y le faltan registros"
+ },
+ {
+  "id": "P009",
+  "name": "Nora",
+  "age": 28,
+  "segment": "Jefe o supervisor SSOMA o de calidad en una contratista mediana (50 a 200 trabajadores)",
+  "income": 22000,
+  "behaviour": "Delega en un consultor externo",
+  "behaviour_how": "Paga a un consultor o a un servicio externo de SSOMA que le arma los documentos, y no quiere cambiar lo que ya le aprueban.",
+  "objection": "Ya lo llevo en Excel con mi consultor y me aprueban las auditorías",
+  "habit": "lleva la administración desde una oficina pequeña con un equipo de menos de cinco personas"
+ },
+ {
+  "id": "P010",
+  "name": "Fatima",
+  "age": 47,
+  "segment": "Gerente general o dueño de una contratista pequeña (10 a 50 trabajadores)",
+  "income": 15000,
+  "behaviour": "Compra solo cuando el cliente lo exige",
+  "behaviour_how": "Gasta en cumplimiento cuando una minera, una constructora grande o SUNAFIL se lo pide con fecha.",
+  "objection": "¿De verdad cubre lo que me piden SUNAFIL y la minera?",
+  "habit": "arma los expedientes de licitación de noche, copiando formatos de trabajos anteriores"
+ },
+ {
+  "id": "P011",
+  "name": "Tariq",
+  "age": 40,
+  "segment": "Jefe o supervisor SSOMA o de calidad en una contratista mediana (50 a 200 trabajadores)",
+  "income": 15000,
+  "behaviour": "Todo en Excel y carpetas",
+  "behaviour_how": "Lleva los registros de seguridad y los documentos ISO en hojas de cálculo y carpetas compartidas; le funciona hasta que llega una auditoría.",
+  "objection": "Mis supervisores están en campo sin señal; con pocos usuarios no me alcanza",
+  "habit": "lleva la administración desde una oficina pequeña con un equipo de menos de cinco personas"
+ },
+ {
+  "id": "P012",
+  "name": "Felix",
+  "age": 47,
+  "segment": "Gerente general o dueño de una contratista pequeña (10 a 50 trabajadores)",
+  "income": 23000,
+  "behaviour": "Compra solo cuando el cliente lo exige",
+  "behaviour_how": "Gasta en cumplimiento cuando una minera, una constructora grande o SUNAFIL se lo pide con fecha.",
+  "objection": "Ya lo llevo en Excel con mi consultor y me aprueban las auditorías",
+  "habit": "tiene en tres semanas una auditoría de homologación de un cliente minero y le faltan registros"
+ },
+ {
+  "id": "P013",
+  "name": "Zoe",
+  "age": 55,
+  "segment": "Gerente de operaciones o de administración en una empresa mediana (200 a 300 trabajadores)",
+  "income": 50000,
+  "behaviour": "Prueba todo lo nuevo",
+  "behaviour_how": "Abre pruebas gratuitas de herramientas nuevas y las descarta rápido si no le ahorran tiempo en la primera semana.",
+  "objection": "El problema no es el precio al mes, es el tiempo que toma implementarlo",
+  "habit": "hace poco recibió una observación de SUNAFIL, o conoce a un colega al que multaron"
+ },
+ {
+  "id": "P014",
+  "name": "Dev",
+  "age": 43,
+  "segment": "Gerente general o dueño de una contratista pequeña (10 a 50 trabajadores)",
+  "income": 22000,
+  "behaviour": "Compra solo cuando el cliente lo exige",
+  "behaviour_how": "Gasta en cumplimiento cuando una minera, una constructora grande o SUNAFIL se lo pide con fecha.",
+  "objection": "Si el sistema falla el día de la auditoría, ¿quién me responde?",
+  "habit": "tiene en tres semanas una auditoría de homologación de un cliente minero y le faltan registros"
+ },
+ {
+  "id": "P015",
+  "name": "Yusuf",
+  "age": 51,
+  "segment": "Jefe o supervisor SSOMA o de calidad en una contratista mediana (50 a 200 trabajadores)",
+  "income": 18000,
+  "behaviour": "Necesita aprobación de gerencia",
+  "behaviour_how": "Cualquier suscripción nueva la aprueba el dueño o finanzas, y suele comparar al menos dos cotizaciones.",
+  "objection": "Mis supervisores están en campo sin señal; con pocos usuarios no me alcanza",
+  "habit": "hace poco recibió una observación de SUNAFIL, o conoce a un colega al que multaron"
+ },
+ {
+  "id": "P016",
+  "name": "Theo",
+  "age": 54,
+  "segment": "Gerente general o dueño de una contratista pequeña (10 a 50 trabajadores)",
+  "income": 32000,
+  "behaviour": "Todo en Excel y carpetas",
+  "behaviour_how": "Lleva los registros de seguridad y los documentos ISO en hojas de cálculo y carpetas compartidas; le funciona hasta que llega una auditoría.",
+  "objection": "No conozco a esta empresa: no veo clientes ni casos de contratistas como yo",
+  "habit": "pasa la mitad del mes en obra o en la unidad minera, con mala conexión"
+ },
+ {
+  "id": "P017",
+  "name": "Alma",
+  "age": 58,
+  "segment": "Gerente general o dueño de una contratista pequeña (10 a 50 trabajadores)",
+  "income": 39000,
+  "behaviour": "Todo en Excel y carpetas",
+  "behaviour_how": "Lleva los registros de seguridad y los documentos ISO en hojas de cálculo y carpetas compartidas; le funciona hasta que llega una auditoría.",
+  "objection": "Pasar todos mis registros y capacitar a mi gente me va a tomar meses",
+  "habit": "pasa la mitad del mes en obra o en la unidad minera, con mala conexión"
+ },
+ {
+  "id": "P018",
+  "name": "Freya",
+  "age": 50,
+  "segment": "Jefe o supervisor SSOMA o de calidad en una contratista mediana (50 a 200 trabajadores)",
+  "income": 22000,
+  "behaviour": "Necesita aprobación de gerencia",
+  "behaviour_how": "Cualquier suscripción nueva la aprueba el dueño o finanzas, y suele comparar al menos dos cotizaciones.",
+  "objection": "No conozco a esta empresa: no veo clientes ni casos de contratistas como yo",
+  "habit": "arma los expedientes de licitación de noche, copiando formatos de trabajos anteriores"
+ },
+ {
+  "id": "P019",
+  "name": "Harper",
+  "age": 37,
+  "segment": "Gerente general o dueño de una contratista pequeña (10 a 50 trabajadores)",
+  "income": 39000,
+  "behaviour": "Ya usa otro software",
+  "behaviour_how": "Tiene contratado un software de seguridad o de ISO, o usa el que le impone su cliente; cambiar significa migrar datos.",
+  "objection": "Ya lo llevo en Excel con mi consultor y me aprueban las auditorías",
+  "habit": "lleva la administración desde una oficina pequeña con un equipo de menos de cinco personas"
+ },
+ {
+  "id": "P020",
+  "name": "Emma",
+  "age": 44,
+  "segment": "Jefe o supervisor SSOMA o de calidad en una contratista mediana (50 a 200 trabajadores)",
+  "income": 19000,
+  "behaviour": "Todo en Excel y carpetas",
+  "behaviour_how": "Lleva los registros de seguridad y los documentos ISO en hojas de cálculo y carpetas compartidas; le funciona hasta que llega una auditoría.",
+  "objection": "Si el sistema falla el día de la auditoría, ¿quién me responde?",
+  "habit": "lleva la administración desde una oficina pequeña con un equipo de menos de cinco personas"
+ }
+]

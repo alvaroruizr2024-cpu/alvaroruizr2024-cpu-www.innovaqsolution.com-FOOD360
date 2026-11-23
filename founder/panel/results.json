@@ -1,0 +1,151 @@
+{
+ "business": "INNOVAQ Solutions: SIG 360° (software de sistema integrado de gestión) más consultoría ISO y de seguridad y salud en el trabajo",
+ "seed": 7,
+ "dealt": 20,
+ "answered": 20,
+ "skipped": [],
+ "buys": 0,
+ "passes": 20,
+ "buy_rate": 0.0,
+ "by_segment": [
+  [
+   "Gerente de operaciones o de administración en una empresa mediana (200 a 300 trabajadores)",
+   4,
+   0.0
+  ],
+  [
+   "Jefe o supervisor SSOMA o de calidad en una contratista mediana (50 a 200 trabajadores)",
+   7,
+   0.0
+  ],
+  [
+   "Gerente general o dueño de una contratista pequeña (10 a 50 trabajadores)",
+   9,
+   0.0
+  ]
+ ],
+ "by_behaviour": [
+  [
+   "Delega en un consultor externo",
+   4,
+   0.0
+  ],
+  [
+   "Prueba todo lo nuevo",
+   2,
+   0.0
+  ],
+  [
+   "Necesita aprobación de gerencia",
+   3,
+   0.0
+  ],
+  [
+   "Todo en Excel y carpetas",
+   5,
+   0.0
+  ],
+  [
+   "Ya usa otro software",
+   2,
+   0.0
+  ],
+  [
+   "Compra solo cuando el cliente lo exige",
+   4,
+   0.0
+  ]
+ ],
+ "by_income": [
+  [
+   "$37,000 and up",
+   7,
+   0.0
+  ],
+  [
+   "under $22,000",
+   6,
+   0.0
+  ],
+  [
+   "$22,000 to $37,000",
+   7,
+   0.0
+  ]
+ ],
+ "why_not": [
+  [
+   "habit",
+   7,
+   [
+    "Ya le pago a un consultor externo de SSOMA que me arma los documentos y las auditorías me los aprueban tal como están; no voy a mover algo que funciona por un software que tendría que alimentar mi equipo de menos de cinco personas. El precio no es el problema, es el cambio.",
+    "Yo ya le pago a un consultor de SSOMA que me arma el IPERC y los registros, y eso es lo que me vienen aprobando. US$ 79 al mes no me asusta, pero no voy a pagar un software que encima alguien de mi empresa tiene que aprender y llenar, justo cuando estoy ocupada levantando la observación de SUNAFIL."
+   ],
+   [
+    "P001",
+    "P006"
+   ]
+  ],
+  [
+   "trust",
+   7,
+   [
+    "La prueba gratis de 30 días la abro seguro, pero pagar en el primer mes no: no voy a pedirle a gerencia US$ 79 mensuales por un proveedor chico de Trujillo que no sé si seguirá el próximo año ni a qué precio. Además, si en la primera semana no me ahorra tiempo armando mis expedientes de licitación, lo dejo y sigo copiando mis formatos de siempre.",
+    "No conozco a INNOVAQ y no veo ni un cliente ni un caso de una contratista de mi tamaño que haya pasado una inspección de SUNAFIL con este sistema. Además ya le pago a un consultor de SSOMA que me arma los documentos y me los aprueban; no voy a mover eso justo después de una observación."
+   ],
+   [
+    "P002",
+    "P004"
+   ]
+  ],
+  [
+   "convenience",
+   4,
+   [
+    "Paso medio mes en obra o en la unidad minera casi sin señal, y un software en la nube que no dice si funciona sin conexión no me sirve justo donde lleno los IPERC y los registros. Además migrar todo lo que tengo en Excel y capacitar a mi gente me tomaría meses, y la compra no la decido yo: el dueño pide al menos dos cotizaciones.",
+    "Mis supervisores llenan el IPERC y las inspecciones en campo, donde no hay señal, y la oferta solo dice 'en la nube'; no dice nada de trabajar sin conexión. Además con 10 usuarios no cubro a mi gente, tendría que pedir el plan de US$ 179 y eso ya lo tiene que aprobar gerencia, que hoy ve que el Excel 'funciona'."
+   ],
+   [
+    "P003",
+    "P011"
+   ]
+  ],
+  [
+   "need",
+   2,
+   [
+    "Ahorita ninguna minera ni SUNAFIL me está pidiendo nada con fecha, y yo en cumplimiento gasto cuando me lo exigen. Mis formatos en Word y Excel de trabajos anteriores me sacan del apuro sin pagar S/ 292 todos los meses.",
+    "La minera me pide los registros completos en tres semanas, no me pide un software. Ahorita necesito a alguien que me arme lo que falta; a lo mucho uso la prueba gratis para sacar las plantillas y después de la auditoría no pago nada."
+   ],
+   [
+    "P010",
+    "P014"
+   ]
+  ]
+ ],
+ "why_yes": [],
+ "flip": [
+  "Que mi propio consultor de SSOMA lo use para llevar nuestros documentos y me lo recomiende él, con el nombre de una empresa de mi tamaño que ya pasó una auditoría trabajando con el sistema.",
+  "Un compromiso por escrito de precio congelado por al menos 2 años, con la posibilidad de exportar todos mis documentos y registros a Word, Excel o PDF cuando yo quiera.",
+  "Que funcione sin conexión en el celular y sincronice después, y que ellos mismos me carguen mis registros y formatos actuales dentro de la prueba de 30 días, con un par de contratistas mineras de referencia que yo pueda llamar para sustentarlo ante el dueño.",
+  "Que mi propio consultor de SSOMA me lo recomiende y lo use él para llevar mis registros, o ver dos o tres contratistas de minería o construcción de 200 a 300 trabajadores, con nombre y teléfono, que me confirmen que pasaron una fiscalización de SUNAFIL usando el sistema.",
+  "Un contrato con el precio congelado por lo menos dos o tres años y la garantía por escrito de que puedo descargar todos mis registros en Excel y PDF cuando quiera, más dos o tres contratistas de mi rubro que ya lo usen y a quienes pueda llamar.",
+  "Que mi consultor me diga que él trabaja con esa herramienta, o que ustedes mismos me migren los documentos que ya tengo y me dejen todo listo para una inspección de SUNAFIL en un plazo fijo, por escrito, sin que mi gente tenga que cargar nada.",
+  "Que me demuestren con un caso real de una contratista minera de mi tamaño que pasó una inspección de SUNAFIL y la homologación de la minera usando esto, y que ellos se encarguen de migrar mis datos del sistema actual sin costo.",
+  "Que me muestren dos o tres contratistas de mi tamaño que aprobaron la homologación de una minera usando SIG 360°, con nombre y teléfono para llamarlos, y que alguien de ellos me deje los registros faltantes cargados antes de mi auditoría.",
+  "Que mi propio consultor me lo recomiende y trabaje ahí, o que el cliente minero o un auditor me observe el control documental en Excel y me exija trazabilidad; y que me migren ellos mis documentos actuales sin costo durante la prueba.",
+  "Que una minera o constructora que me contrata lo pida o lo acepte por escrito, o que me muestren con un caso de una contratista como la mía que el expediente salido del sistema pasó una inspección de SUNAFIL o una homologación, justo cuando tenga una licitación con fecha encima.",
+  "Que me demuestren en la prueba de 30 días que funciona sin señal desde el celular y sincroniza después, y que pueda meter a mis supervisores de campo sin saltar al plan de US$ 179.",
+  "Que la minera o la empresa homologadora me exija o me puntúe llevar los registros en una plataforma, o que ustedes se comprometan por escrito y a precio cerrado a dejarme los registros que me faltan listos antes de la auditoría.",
+  "Que dentro de la prueba ellos mismos carguen mis documentos y registros actuales y me dejen en dos semanas, con fecha comprometida, los registros de la Ley 29783 listos para mostrarle a SUNAFIL.",
+  "Que me den por escrito, con un responsable con nombre y celular, que me dejan los registros faltantes cargados antes de la auditoría y que me acompañan ese día; o que la propia minera o la homologadora me diga que acepta los registros así.",
+  "Que en la prueba me demuestren que se registra en campo sin señal desde el celular y sincroniza después, con usuarios suficientes para mis supervisores (unos 25 a 30) en una cotización formal que pueda llevar a gerencia junto a otra.",
+  "Que me presenten dos o tres contratistas de mi tamaño que lo usen y hayan pasado con eso una auditoría u homologación de la minera, y que yo pueda llamarlas; y que me demuestren que funciona sin conexión en obra.",
+  "Que ellos mismos me carguen mis Excel y mis carpetas al sistema y capaciten a mi gente dentro del precio, en un par de semanas y sin cotización aparte, y que me demuestren que se puede registrar en campo sin internet. O que la minera me lo exija en la próxima auditoría.",
+  "Ver dos o tres contratistas de minería o construcción de mi tamaño, con nombre y un contacto al que pueda llamar, que ya lo usen y hayan pasado con el sistema una homologación o auditoría de su cliente; y una demostración con mis propios formatos para llevarle al dueño.",
+  "Que ellos mismos me migren todo sin costo y que mi cliente minero o mi auditor acepte los registros sacados de ese software, de modo que reemplace lo que ya uso y no se sume como un sistema más.",
+  "Hablar con dos o tres contratistas de mi tamaño que ya hayan pasado una auditoría usando el sistema, y un compromiso por escrito de soporte con tiempo de respuesta, más poder exportar todo a Excel y PDF cuando yo quiera."
+ ],
+ "purchases_first_month_per_buyer": null,
+ "price_answers": 20
+}

@@ -1,0 +1,13 @@
+{
+  "id": "P018",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "No conozco a INNOVAQ y no veo ni un solo cliente o caso de una contratista como la nuestra; con eso no puedo ir donde el dueño a pedirle que apruebe una suscripción nueva. A lo mucho abriría la prueba gratis cuando no tenga una licitación encima, pero pagar este mes, no.",
+  "objection": "Si subo todos mis registros de la Ley 29783 y mis procedimientos a un software de una empresa que no conozco, ¿quién me responde si en plena auditoría de la minera o en una fiscalización de SUNAFIL el sistema falla o la empresa desaparece? Además gerencia me va a pedir una segunda cotización y referencias, y hoy no tengo qué mostrar.",
+  "would_change_my_mind": "Ver dos o tres contratistas de minería o construcción de mi tamaño, con nombre y un contacto al que pueda llamar, que ya lo usen y hayan pasado con el sistema una homologación o auditoría de su cliente; y una demostración con mis propios formatos para llevarle al dueño.",
+  "price_too_cheap": 25,
+  "price_cheap": 50,
+  "price_expensive": 100,
+  "price_too_expensive": 160
+}

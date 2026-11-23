@@ -1,0 +1,13 @@
+{
+  "id": "P010",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "need",
+  "reason": "Ahorita ninguna minera ni SUNAFIL me está pidiendo nada con fecha, y yo en cumplimiento gasto cuando me lo exigen. Mis formatos en Word y Excel de trabajos anteriores me sacan del apuro sin pagar S/ 292 todos los meses.",
+  "objection": "No sé si de verdad cubre lo que me piden SUNAFIL y la minera. Cada minera me manda sus propios formatos y su homologación, y nadie me asegura que lo que sale de este software me lo acepten tal cual; si igual tengo que rehacer todo de noche, pagué por gusto.",
+  "would_change_my_mind": "Que una minera o constructora que me contrata lo pida o lo acepte por escrito, o que me muestren con un caso de una contratista como la mía que el expediente salido del sistema pasó una inspección de SUNAFIL o una homologación, justo cuando tenga una licitación con fecha encima.",
+  "price_too_cheap": 8,
+  "price_cheap": 20,
+  "price_expensive": 50,
+  "price_too_expensive": 90
+}

@@ -1,0 +1,13 @@
+{
+  "id": "P002",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "La prueba gratis de 30 días la abro seguro, pero pagar en el primer mes no: no voy a pedirle a gerencia US$ 79 mensuales por un proveedor chico de Trujillo que no sé si seguirá el próximo año ni a qué precio. Además, si en la primera semana no me ahorra tiempo armando mis expedientes de licitación, lo dejo y sigo copiando mis formatos de siempre.",
+  "objection": "Si subo todos mis procedimientos, IPERC y registros ahí y luego suben el precio o la empresa desaparece, me quedo sin sistema en plena auditoría o licitación y sin saber cómo sacar mi información.",
+  "would_change_my_mind": "Un compromiso por escrito de precio congelado por al menos 2 años, con la posibilidad de exportar todos mis documentos y registros a Word, Excel o PDF cuando yo quiera.",
+  "price_too_cheap": 15,
+  "price_cheap": 39,
+  "price_expensive": 99,
+  "price_too_expensive": 150
+}

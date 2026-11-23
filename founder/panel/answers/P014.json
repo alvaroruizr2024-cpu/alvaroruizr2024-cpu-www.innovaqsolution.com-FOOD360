@@ -1,0 +1,13 @@
+{
+  "id": "P014",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "need",
+  "reason": "La minera me pide los registros completos en tres semanas, no me pide un software. Ahorita necesito a alguien que me arme lo que falta; a lo mucho uso la prueba gratis para sacar las plantillas y después de la auditoría no pago nada.",
+  "objection": "Si el sistema se cae o no abre el día de la auditoría, ¿quién me responde? No conozco a esta empresa, no veo un nombre ni un teléfono que dé la cara, y no voy a jugarme la homologación con algo que recién estoy aprendiendo a usar.",
+  "would_change_my_mind": "Que me den por escrito, con un responsable con nombre y celular, que me dejan los registros faltantes cargados antes de la auditoría y que me acompañan ese día; o que la propia minera o la homologadora me diga que acepta los registros así.",
+  "price_too_cheap": 12,
+  "price_cheap": 30,
+  "price_expensive": 65,
+  "price_too_expensive": 110
+}
